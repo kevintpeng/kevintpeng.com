@@ -131,18 +131,49 @@
   	color: white;
   }
   
-  .btn-primary{
-  	background-color: #9966ff;
-  	border-color: #884dff;
+
+  .btn-primary {
+  color: #fff;
+  background-color: #9966ff;
+  border-color: #884dff;
   }
-    .btn-primary:active{
-  	background-color: white;
- 	border-color: #661aff;	
+  .btn-primary:focus,
+  .btn-primary.focus {
+    color: #fff;
+    background-color: #884dff  ;
+    border-color: #122b40;
   }
-  .btn-primary:hover{
-  	background-color: #884dff;
-  	border-color: #884dff;
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #884dff  ;
+    border-color: #661aff;
   }
+  .btn-primary:active,
+  .btn-primary.active,
+  .open > .dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #884dff  ;
+    border-color: #661aff;
+  }
+  .btn-primary:active:hover,
+  .btn-primary.active:hover,
+  .open > .dropdown-toggle.btn-primary:hover,
+  .btn-primary:active:focus,
+  .btn-primary.active:focus,
+  .open > .dropdown-toggle.btn-primary:focus,
+  .btn-primary:active.focus,
+  .btn-primary.active.focus,
+  .open > .dropdown-toggle.btn-primary.focus {
+    color: #fff;
+    background-color: #661aff;
+    border-color: #122b40;
+  }
+  .btn-primary:active,
+  .btn-primary.active,
+  .open > .dropdown-toggle.btn-primary {
+    background-image: none;
+  }
+
   video{
   	border-width: 60px;
   	border-radius: 30px;
@@ -158,19 +189,34 @@
   div.home-image{
   	height: 100%;
   	width: 100%;
-	background-image: url("/assets/backdrop.png");
+	background-image: url("./assets/backdrop.png");
 	background-repeat: no-repeat;
 	background-size: 1400px auto;
 	max-width: 1400px;
 	margin: auto;
 	opacity: 0.1;
   }
+  div.container-wrapper{
+    background-color: white;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+  }
   div.container-body{
-  	background-color: white;
-  	height: 50%;
+  	max-width: 780px;
+    padding: 10px;
+    margin: auto;
+    color: black;
+    font-size: 18;
+    font-weight: 300;
   }
   div .container-body h1{
-  	color: #ddccff;
+  	color: #9966ff;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  div .container-body h3{
+    font-weight: 300; 
   }
   .nav li a:focus{
     outline: 0;
@@ -186,25 +232,45 @@
     outline: 0;
   	background-color: rgba(0,0,0,0.2);
   }
+  i.devicon{
+    color: #9966ff;
+    font-size: 48;
+  }
+  h2.position{
+    float: left;
+    margin-bottom: 20px;
+  }
+  h2.devicons{
+    float: right;
+  }
+  div.floating-banner{
+    margin-bottom: 100px;
+  }
 </style>
 
 </head>
 
-
 <body>
-<nav class="navbar-collapse collapse in" aria-expanded="true">
-  <div class="container">
-    <a class="name-icon" href="#">KP</a>
-    <ul class="nav navbar-nav navbar-right">
-    <li>
-      <a href="#">Workterms</a>
-    </li>
-    <li>
-      <a href="#">Projects</a>
-    </li>
-  </ul>
-  </div>
+<nav class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="name-icon" href="#">KP</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#Work Experience">Work Terms</a></li>
+        <li><a href="#">Projects</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container-fluid -->
 </nav>
+
 <div class ="main">
   <div class="home-image-wrap"><div class="home-image"></div></div>
   <div class="main-heading">Kevin <b>Peng</b></div>
@@ -219,7 +285,43 @@
 </div>
 
 </div>
-<div class="container-body"></div>
-	<div class="container"></div>
+<div class="container-wrapper">
+<div class="container-body">
+  <div class="container-body">
+    <h1>Work Experience</h1> 
+    <hr>
+    <div class="floating-banner">
+    <h2 class="position">FULL STACK WEB DEVELOPER</h2>
+    <h2 class="devicons"><i class="devicon devicon-ruby-plain-wordmark"></i>
+    <i class="devicon devicon-rails-plain-wordmark"></i>
+    <i class="devicon devicon-bootstrap-plain-wordmark"></i>
+    <i class="devicon devicon-css3-plain-wordmark"></i>
+    <i class="devicon devicon-html5-plain-wordmark"></i></h2>
+    </div>
+    <h3>Petro Recruit</h3>
+    <p><i>Calgary AB | August - December 2015</i></p>
+    <p>Petro Recruit is a startup company based in Calgary, Alberta. We focused on employment in oil and gas verticals by providing a streamline platform for companies and candidates to connect.</p>
+    <p>I constructed and developed their web application using Ruby on Rails as backend and Bootstrap for frontend.</p>
+    <a class="btn btn-primary btn-lg" href="petrorecruit.html">Read More...</a>
+    <hr>
+    
+    <h3><b>PetroPredict</b> | SOFTWARE ENGINEERING INTERN</h3>
+    <a class="btn btn-primary btn-lg" href="petrorecruit.html">Read More...</a>
+    <hr>
+    <h1>Awards</h1> 
+    <ul>
+      <li>
+        National Science Fair
+      </li>
+      <li>
+      </li>
+    </ul>
+    
+  </div>
+</div>
+</div>
+	<div class="container">
+   
+  </div>
 </body>
 </html>
