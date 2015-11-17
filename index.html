@@ -22,6 +22,7 @@
     color: #ddccff;
     background-color: #9966ff;
     font-size: 18;
+    box-shadow: inset 0 0 490px rgba(0,0,0,0.6);
   }
   h1{
     font-family: 'Lato', sans-serif;
@@ -97,12 +98,11 @@
   	color: #ddccff;
   }
   a.name-icon:hover{
-  	background-color: #884dff;
+  	background-color: rgba(0,0,0,0.1);
   	text-decoration: none;
   }
   nav{
   	height: 50px;
-  	background-color: #9966ff;
   	padding: 10px;
   }
 
@@ -154,11 +154,14 @@
 	background-size: 1400px auto;
 	max-width: 1400px;
 	margin: auto;
-	opacity: 0.05;
+	opacity: 0.1;
   }
   div.container-body{
   	background-color: white;
   	height: 50%;
+  }
+  .nav li a:hover, a:active, a:focus{
+  	background-color: rgba(0,0,0,0.1) !important;
   }
 
 </style>
@@ -195,6 +198,6 @@
 
 </div>
 <div class="container-body"></div>
-
+	<div class="container"></div>
 </body>
 </html>
