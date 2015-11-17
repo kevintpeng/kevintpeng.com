@@ -172,12 +172,20 @@
   div .container-body h1{
   	color: #ddccff;
   }
-  .nav li a:hover, a:active, a:focus{
+  .nav li a:focus{
+    outline: 0;
+  	background-color: rgba(0,0,0,0);
+  }
+  
+  .nav li a:hover{
   	outline: 0;
-  	background-color: rgba(0,0,0,0.1) !important;
+  	background-color: rgba(0,0,0,0.1);
   	border-radius: 10px;
   }
-
+  .nav li a:active{
+    outline: 0;
+  	background-color: rgba(0,0,0,0.2);
+  }
 </style>
 
 </head>
