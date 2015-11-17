@@ -1,5 +1,6 @@
 <html>
 <head>
+<title>Kevin Peng</title>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 
@@ -9,13 +10,18 @@
 <!-- Octicons -->
 <link rel="stylesheet" href="/assets/octicons/octicons.css">
 
+<!-- devicons -->
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+
+
 <style>
 
 
   body{
     font-family: 'Lato', sans-serif;
     color: #ddccff;
-    background-color: #222;
+    background-color: #9966ff;
+    font-size: 18;
   }
   h1{
     font-family: 'Lato', sans-serif;
@@ -66,7 +72,7 @@
   }
 
   div.main{
-  	background-color: #9966ff;
+/*  	background-color: ;*/
   	padding: 60px;
   }
   div.main-body{
@@ -99,21 +105,7 @@
   	background-color: #9966ff;
   	padding: 10px;
   }
-  div.home-image-wrap{
-  	position: absolute;
-	top: 68px;
-	left: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
-  }
-  div.home-image{
-  	height: 100%;
-	background-image: url("/assets/backdrop.png");
-	background-repeat: no-repeat;
-	background-size: 1400px auto;
-	opacity: 0.1;
-  }
+
   .btn{
   	font-family: 'Lato', sans-serif;
   	font-weight: 400;
@@ -142,14 +134,52 @@
   	background-color: #884dff;
   	border-color: #884dff;
   }
-
+  video{
+  	border-width: 60px;
+  	border-radius: 30px;
+  }
+  div.home-image-wrap{
+  	position: absolute;
+	top: 68px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+  }
+  div.home-image{
+  	height: 100%;
+	background-image: url("/assets/backdrop.png");
+	background-repeat: no-repeat;
+	background-size: 1400px auto;
+	margin: auto;
+	opacity: 0.1;
+  }
+  div.container-body{
+  	background-color: white;
+  	height: 50%;
+  }
 
 </style>
+
 </head>
 
-<nav><div class="container"><a class="name-icon" href="#">KP</a></div></nav>
+
+<body>
+<nav class="navbar-collapse collapse in" aria-expanded="true">
+  <div class="container">
+    <a class="name-icon" href="#">KP</a>
+    <ul class="nav navbar-nav navbar-right">
+    <li>
+      <a href="#">Workterms</a>
+    </li>
+    <li>
+      <a href="#">Projects</a>
+    </li>
+  </ul>
+  </div>
+</nav>
 <div class ="main">
- <div class="home-image-wrap"><div class="home-image"></div></div>
+  <div class="home-image-wrap"><div class="home-image"></div></div>
   <div class="main-heading">Kevin <b>Peng</b></div>
   <div class="main-body">
     <p>University of Waterloo Student</p> 
@@ -157,13 +187,12 @@
     <p><a href="https://github.com/kevintpeng"><span class="octicon octicon-mark-github"></span> https://github.com/kevintpeng</a></p>
     <p><a href="https://linkedin.com/in/kevintpeng">https://linkedin.com/in/kevintpeng</a></p>
     </br>
-    <a class="btn btn-inverse btn-lg">Continue to Portfolio</a>
-   
-
-
-    
+    <a class="btn btn-inverse btn-lg">Continue to Portfolio</a>   
   </div>
 </div>
 
+</div>
+<div class="container-body"></div>
 
+</body>
 </html>
