@@ -8,7 +8,7 @@
 <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,300italic,400italic,700' rel='stylesheet' type='text/css'>
 
 <!-- Octicons -->
-<link rel="stylesheet" href="/assets/octicons/octicons.css">
+<link rel="stylesheet" href="./assets/octicons/octicons.css">
 
 <!-- devicons -->
 <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
@@ -21,7 +21,7 @@
     font-family: 'Lato', sans-serif;
     color: #ddccff;
     background-color: #9966ff;
-    font-size: 18;
+    font-size: 18px;
     box-shadow: inset 0 0 490px rgba(0,0,0,0.6);
   }
   h1{
@@ -37,7 +37,6 @@
   	outline: 0;
   }
   a:link{
-	   color: #ddccff;
 	   text-decoration: none;
 	}
 	a:visited{
@@ -118,6 +117,7 @@
   	font-family: 'Lato', sans-serif;
   	font-weight: 400;
   	border-radius: 10px;
+    color: white;
 
   }
   .btn-inverse{
@@ -136,7 +136,7 @@
   
 
   .btn-primary {
-  color: #fff;
+  color: white;
   background-color: #9966ff;
   border-color: #884dff;
   }
@@ -201,7 +201,8 @@
   }
   div.container-wrapper{
     background-color: white;
-    padding-top: 60px;
+    color: black;
+    padding-top: 20px;
     padding-bottom: 60px;
 
   }
@@ -217,6 +218,7 @@
   	color: #9966ff;
     text-transform: uppercase;
     text-align: left;
+    margin-top: 60px;
   }
   div.container-body h2{
     text-transform: uppercase;
@@ -247,7 +249,7 @@
     color: #9966ff;
     font-size: 48;
   }
-  h2.position{
+  h2.entry{
     float: left;
   }
   h2.devicons{
@@ -255,7 +257,16 @@
     line-height: 0.5;
   }
   div.floating-banner{
-    margin-bottom: 90px;
+    overflow: auto;
+    /*position: relative;*/
+  }
+  div.floating-banner-inner{
+  }
+
+  img.thumbnail{
+    margin: 5px;
+    border-radius: 10px;
+
   }
 </style>
 
@@ -271,12 +282,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="name-icon" href="#">KP</a>
+      <a id="Top" class="name-icon" href="#">KP</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#Work_Experience">Work Terms</a></li>
-        <li><a href="#">Projects</a></li>
+        <li><a href="#Work_Experience">Work Experience</a></li>
+        <li><a href="#Projects">Projects</a></li>
         <li><a href="#Awards">Awards</a></li>
       </ul>
     </div><!--/.nav-collapse -->
@@ -287,9 +298,16 @@
   <div class="home-image-wrap"><div class="home-image"></div></div>
   <div class="main-heading">Kevin <b>Peng</b></div>
   <div class="main-body">
-    <p>University of Waterloo Student</p> 
-    <p>Software Engineer</p>
-    <p><a href="https://github.com/kevintpeng"><span class="octicon octicon-mark-github"></span> https://github.com/kevintpeng</a></p>
+    <p>
+      <span class="glyphicon glyphicon-education"></span> 
+      University of Waterloo 
+      Software Engineering Student
+    </p> 
+    <p><span class="glyphicon glyphicon-envelope"></span> ktpeng@uwaterloo.ca</p>
+    <p><span class="glyphicon glyphicon-earphone"></span> +1 (226)-808-8501</p>
+    
+    <p>
+      <a href="https://github.com/kevintpeng"><i class="devicon-github-plain"></i> https://github.com/kevintpeng</a></p>
     <p><a href="https://linkedin.com/in/kevintpeng">https://linkedin.com/in/kevintpeng</a></p>
     </br>
     <a class="btn btn-inverse btn-lg">Continue to Portfolio</a>   
@@ -302,13 +320,18 @@
     <h1 id="Work_Experience">Work Experience</h1> 
     <hr>
     <div class="floating-banner">
-    <h2 class="position">Full Stack Web Developer</h2>
-    <h2 class="devicons"><i class="devicon devicon-ruby-plain-wordmark"></i>
+    <div class="floating-banner-inner">
+    <h2 class="entry">Full Stack Web Developer</h2>
+    <h2 class="devicons">
+    <i class="devicon devicon-ruby-plain-wordmark"></i>
     <i class="devicon devicon-rails-plain-wordmark"></i>
     <i class="devicon devicon-postgresql-plain-wordmark"></i>
+    <i class="devicon devicon-heroku-plain-wordmark"></i>
     <i class="devicon devicon-bootstrap-plain-wordmark"></i>
     <i class="devicon devicon-css3-plain-wordmark"></i>
-    <i class="devicon devicon-html5-plain-wordmark"></i></h2>
+    <i class="devicon devicon-html5-plain-wordmark"></i>
+    </h2>
+    </div>
     </div>
     <h3>Petro Recruit</h3>
     <h4>Calgary AB / Waterloo ON | August - December 2015</h4>
@@ -318,14 +341,16 @@
     <hr>
     
     <div class="floating-banner">
-    <h2 class="position">Software Engineering Intern</h2>
+    <div class="floating-banner-inner">
+    <h2 class="entry">Software Engineering Intern</h2>
     <h2 class="devicons">
        <i class="devicon devicon-python-plain-wordmark"></i>
        <i class="devicon devicon-django-plain"></i>
-       <i class="devicon devicon-postgresql-plain-wordmark"></i>
        <i class="devicon devicon-d3js-plain"></i>
-       <i class="devicon devicon-git-plain"></i>
+       <i class="devicon devicon-postgresql-plain-wordmark"></i>
+       <i class="devicon devicon-git-plain-wordmark"></i>
     </h2>
+    </div>
     </div>
     <h3>PetroPredict</h3>
     <h4>Waterloo ON | June 2014 - August 2014</h4>
@@ -333,21 +358,168 @@
     <p>Wrote a python parser for json data that extracted and reformatted data for graphing and visualization using D3.js.</p>
     <p>Worked with a team of software developers, using git as the Version Control System.</p>
     <a class="btn btn-primary btn-lg" href="petrorecruit.html">Read More...</a>
-
     <hr>
-    <h1 id="Awards">Awards</h1> 
-    <ul>
-      <li>
-        National Science Fair
-      </li>
-      <li>
-      </li>
-    </ul>
+    <h1 id="Projects">Projects</h1>
+    <div class="floating-banner">
+    <div class="floating-banner-inner">
+    <h2 class="entry">Arduino Game of Life</h2>
+    <h2 class="devicons">
+      <i class="devicon devicon-c-plain"></i>
+      <i class="devicon devicon-git-plain-wordmark"></i>
+      <i class="devicon devicon-java-plain-wordmark"></i>
+    </h2>
+    </div>
+    </div>
+    <p></p>
+    <hr>
+
+    <div class="floating-banner">
+    <div class="floating-banner-inner">
+    <h2 class="entry">Rubik's Cube Solver</h2>
+    <h2 class="devicons">
+      <i class="devicon devicon-java-plain-wordmark"></i>
+    </h2>
+    </div>
+    </div>
+    <p></p>
+    <hr>
+
+    <div class="floating-banner">
+    <div class="floating-banner-inner">
+    <h2 class="entry">Polynomial Graphing Calculator</h2>
+    <h2 class="devicons">
+      <i class="devicon devicon-java-plain-wordmark"></i>
+      
+    </h2>
+    </div>
+    </div>
+    <hr>
     
+    <div class="floating-banner">
+    <div class="floating-banner-inner">
+    <h2 class="entry">Dota Captain, Win-rate Analysis</h2>
+    <h2 class="devicons">
+      <i class="devicon devicon-python-plain-wordmark"></i>
+    </h2>
+    </div>
+    </div>
+    <hr>
+
+    <div class="floating-banner">
+    <div class="floating-banner-inner">
+    <h2 class="entry">Farthest Points in a Set</h2>
+    <h2 class="devicons">
+      <i class="devicon devicon-java-plain-wordmark"></i>
+      
+    </h2>
+    </div>
+    </div>
+    <hr>
+    
+    <div class="floating-banner">
+    <div class="floating-banner-inner">
+    <h2 class="entry">Mandelbrot and Julia Set Generator</h2>
+    <h2 class="devicons">
+      <i class="devicon devicon-java-plain-wordmark"></i>
+      
+    </h2>
+    </div>
+    </div>
+    <hr>
+
+    <div class="floating-banner">
+    <div class="floating-banner-inner">
+    <h2 class="entry">Blogging Web Application</h2>
+    <h2 class="devicons">
+      <i class="devicon devicon-ruby-plain-wordmark"></i>
+    <i class="devicon devicon-rails-plain-wordmark"></i>
+    </h2>
+    </div>
+    </div>
+    <hr>
+
+    <h1 id="Awards">Awards</h1> 
+    <hr>
+
+    <div class="floating-banner">
+    <div class="floating-banner-inner">
+    <h2 class="entry">Energy Innovation Award ($500)</h2>
+    <h2 class="devicons">
+      2015
+    </h2>
+    </div>
+    </div>
+    <h3>Eastern Canada Student Energy Conference</h3>
+    <p>The Eastern Canada Student Energy Conference is hosted by the SPE Student Chapter at the University of Waterloo. Students from a number of universities in Eastern Canada gather and get acquainted to the complexities, challenges and realities of the oil and gas industry. The innovation award is for the winning group in the case study competition, hosted by the Conrad Business, Entrepreneurship and Technology Centre. The case study emphasizes innovation in the energy sector. </p>
+    <hr>
+
+    <div class="floating-banner">
+    <div class="floating-banner-inner">
+    <h2 class="entry">Community Volunteer Scholarship ($300)</h2>
+    <h2 class="devicons">
+      2015
+    </h2>
+    </div>
+    </div>
+    <h3>Laurelwood Neighbourhood Association</h3>
+    <p>This award was for outstanding contributions to the community of Laurelwood through involvement with the Laurelwood Neighbourhood Association.</p>
+    <hr>
+
+    <div class="floating-banner">
+    <div class="floating-banner-inner">
+    <h2 class="entry">Highlander Gold Award</h2>
+    <h2 class="devicons">
+      2015
+    </h2>
+    </div>
+    </div>
+    <p>For the highest level of involvement and achievement in academics, athletics and activities at Sir John A. Macdonald Secondary School. Awarded for involvement in Senior Band, Captain of school Volleyball team, Basketball Team, Computer Science Club, Math Club, Science Club, DECA</p>
+    <hr>
+
+    <div class="floating-banner">
+    <div class="floating-banner-inner">
+    <h2 class="entry">Silver Medalist and Best in Category ($3200)</h2>
+    <h2 class="devicons">
+      2011
+    </h2>
+    </div>
+    </div>
+    <h3>Canada-Wide Science Fair</h3>
+    <p></p>
+    <hr>
+
+    <div class="floating-banner">
+    <div class="floating-banner-inner">
+    <h2 class="entry">3x Gold Medalist (~$500)</h2>
+    <h2 class="devicons">
+      2010-2012
+    </h2>
+    </div>
+    </div>
+    <h3>Waterloo Wellington Science and Engineering Fair (WWSEF)</h3>
+    <p></p>
+    <hr>
+
+    <div class="floating-banner">
+    <div class="floating-banner-inner">
+    <h2 class="entry">Other Achievements</h2>
+    <h2 class="devicons">
+      2015-2010
+    </h2>
+    </div>
+    </div>
+    <h3>Canadian Computing Competition Certificate of Distinction (Top 25%)</h3>
+    <h3>Winner of SJAM Engineering Robotics Competition</h3>
+    <h3>DECA Silver Medalist</h3>
+    <h3>2X Award of Merit, Waterloo Wellington Science and Engineering Fair (WWSEF)</h3>
+    <h3>2X Best of Division Award, WWSEF</h3>
+    <h3>Sir Isaac Newton Award, WWSEF</h3>
+    <h3>The Ontario Ministry of Research and Innovation Stepping Stone Award, WWSEF</h3>
+    <p></p>
+    <hr>
+
   </div>
 </div>
-	<div class="container">
-   
-  </div>
+
 </body>
 </html>
