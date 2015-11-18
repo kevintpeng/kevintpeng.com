@@ -29,6 +29,9 @@
     font-weight: 300;
     text-align: center;
   }
+  h2{
+    font-weight: 300;
+  }
   a{
   	color: #ddccff;
   	outline: 0;
@@ -203,7 +206,7 @@
 
   }
   div.container-body{
-  	max-width: 780px;
+  	max-width: 900px;
     padding: 10px;
     margin: auto;
     color: black;
@@ -215,8 +218,16 @@
     text-transform: uppercase;
     text-align: left;
   }
+  div.container-body h2{
+    text-transform: uppercase;
+    text-align: left;
+  }
   div .container-body h3{
     font-weight: 300; 
+  }
+  div .container-body h4{
+    font-weight: 300; 
+    font-style: italic;
   }
   .nav li a:focus{
     outline: 0;
@@ -238,13 +249,13 @@
   }
   h2.position{
     float: left;
-    margin-bottom: 20px;
   }
   h2.devicons{
     float: right;
+    line-height: 0.5;
   }
   div.floating-banner{
-    margin-bottom: 100px;
+    margin-bottom: 90px;
   }
 </style>
 
@@ -264,8 +275,9 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#Work Experience">Work Terms</a></li>
+        <li><a href="#Work_Experience">Work Terms</a></li>
         <li><a href="#">Projects</a></li>
+        <li><a href="#Awards">Awards</a></li>
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container-fluid -->
@@ -287,28 +299,39 @@
 </div>
 <div class="container-wrapper">
 <div class="container-body">
-  <div class="container-body">
-    <h1>Work Experience</h1> 
+    <h1 id="Work_Experience">Work Experience</h1> 
     <hr>
     <div class="floating-banner">
-    <h2 class="position">FULL STACK WEB DEVELOPER</h2>
+    <h2 class="position">Full Stack Web Developer</h2>
     <h2 class="devicons"><i class="devicon devicon-ruby-plain-wordmark"></i>
     <i class="devicon devicon-rails-plain-wordmark"></i>
+    <i class="devicon devicon-postgresql-plain-wordmark"></i>
     <i class="devicon devicon-bootstrap-plain-wordmark"></i>
     <i class="devicon devicon-css3-plain-wordmark"></i>
     <i class="devicon devicon-html5-plain-wordmark"></i></h2>
     </div>
     <h3>Petro Recruit</h3>
-    <p><i>Calgary AB | August - December 2015</i></p>
-    <p>Petro Recruit is a startup company based in Calgary, Alberta. We focused on employment in oil and gas verticals by providing a streamline platform for companies and candidates to connect.</p>
-    <p>I constructed and developed their web application using Ruby on Rails as backend and Bootstrap for frontend.</p>
+    <h4>Calgary AB / Waterloo ON | August - December 2015</h4>
+    <p>Petro Recruit is a startup company focused on employment in oil and gas verticals by providing a streamline platform for companies and candidates to connect.</p>
+    <p>I built the platform using Ruby on Rails.</p>
     <a class="btn btn-primary btn-lg" href="petrorecruit.html">Read More...</a>
     <hr>
     
-    <h3><b>PetroPredict</b> | SOFTWARE ENGINEERING INTERN</h3>
+    <div class="floating-banner">
+    <h2 class="position">Software Engineering Intern</h2>
+    <h2 class="devicons">
+       <i class="devicon devicon-python-plain-wordmark"></i>
+       <i class="devicon devicon-django-plain"></i>
+       <i class="devicon devicon-postgresql-plain-wordmark"></i>
+       <i class="devicon devicon-d3js-plain"></i>
+       <i class="devicon devicon-git-plain"></i>
+    </h2>
+    </div>
+    <h3>PetroPredict</h3>
+    <h4>Waterloo ON | June 2014 - August 2014</h4>
     <a class="btn btn-primary btn-lg" href="petrorecruit.html">Read More...</a>
     <hr>
-    <h1>Awards</h1> 
+    <h1 id="Awards">Awards</h1> 
     <ul>
       <li>
         National Science Fair
@@ -318,7 +341,6 @@
     </ul>
     
   </div>
-</div>
 </div>
 	<div class="container">
    
