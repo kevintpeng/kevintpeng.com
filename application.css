@@ -250,3 +250,8 @@ img.thumbnail{
 .glyphicon-padded{
   margin-right: 10px;
 }
+img.thumbnail-img{
+  max-height: 200px; 
+  max-width: 100%;
+  margin: 0 auto;
+}
