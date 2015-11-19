@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>Kevin Peng</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+<!-- lato from google -->
+<link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,300italic,400italic,700' rel='stylesheet' type='text/css'>
+
+<!-- Octicons -->
+<link rel="stylesheet" href="./assets/octicons/octicons.css">
+
+<!-- devicons -->
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+
+<!-- Social Media Icons -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="./application.css">
+
+
+</head>
+<body>
+<nav class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a id="Top" class="name-icon" href="./index.html">KP</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="./index.html#Work_Experience">Work Experience</a></li>
+        <li><a href="./index.html#Projects">Projects</a></li>
+        <li><a href="./index.html#Awards">Awards</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container-fluid -->
+</nav>
+
+<div class ="main">
+  <div class="home-image-wrap"><div class="home-image"></div></div>
+  <div class="main-heading">TI Launchpad:<br>Game of Life</div>
+</div>
+<div class="container-wrapper">
+  <div class="container-body">
+    <div class="floating-banner">
+    <div class="floating-banner-inner">
+    <h2 class="entry">TI Launchpad Microprocessor:<br>Conway's Game of Life</h2>
+    <h2 class="devicons">
+      <i class="devicon devicon-c-plain"></i>
+      <i class="devicon devicon-java-plain-wordmark"></i>
+    </h2>
+    </div>
+    </div>
+    <p>Built for Texas Instrument's Launchpad Microprocessor using the Orbit Booster Pack hardware add-on. Conway's Game of Life is implemented on the 128x32 LCD screen, written in C. The project includes sensor integration and hardware output.</p>
+    <video controls="controls" name="Launchpad Video" src="assets/output.mov" width="100%" controls autoplay loop align="center" style="margin-top:20px;margin-bottom:20px;"></video>
+    <p>Conway&rsquo;s Game of Life is a zero-player game, during which cells, based on a set of rules, can live, multiply or die. Depending on the game&rsquo;s initiate state, the cells will form various patterns, which will be displayed on the Booster Pack&rsquo;s OLED display. </p>
+    <h3>Hardware Integration</h3>
+    <p>
+    The 128x32 OLED display takes a row major bitmap of column mapped bytes as input.
+    Using the Booster Pack&rsquo;s accelerometer and potentiometer, the simulated life will be dependent, not only on the size of its container, but also, on its surroundings. The potentiometer will vary the speed of growth and death, while a shake of the Launchpad and Booster Pack will wipe all life and start again. Finally, an LED that will indicate the current progression of life on the display. For example, the LED will turn from red to green when life becomes sustainable.</p>
+    <a href="https://github.com/kevintpeng/Launchpad_GOL" class="btn btn-primary btn-lg"><i class="devicon-github-plain"></i> Source Code</a>
+  </div>
+</div>
+</body>
+
+<footer>
+  <h1>Kevin Peng</h1>
+  <hr style="max-width: 500px;">
+  <p>
+    <span class="glyphicon glyphicon-education glyphicon-padded"></span> 
+    University of Waterloo Software Engineering Student
+  </p> 
+  <p><span class="glyphicon glyphicon-envelope glyphicon-padded"></span> ktpeng@uwaterloo.ca</p>
+  <p><span class="glyphicon glyphicon-earphone glyphicon-padded"></span> +1 (226)-808-8501</p>
+  
+  <p>
+    <a href="https://github.com/kevintpeng"><i class="devicon-github-plain glyphicon-padded"></i> github.com/kevintpeng</a></p>
+  <p><a href="https://linkedin.com/in/kevintpeng"><i class="fa fa-linkedin glyphicon-padded"></i> linkedin.com/in/kevintpeng</a></p>
+</footer></html>

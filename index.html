@@ -13,267 +13,15 @@
 <!-- devicons -->
 <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 
+<!-- Social Media Icons -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-<style>
+<link rel="stylesheet" href="./application.css">
 
-
-  body{
-    font-family: 'Lato', sans-serif;
-    color: #ddccff;
-    background-color: #9966ff;
-    font-size: 18px;
-    box-shadow: inset 0 0 490px rgba(0,0,0,0.6);
-  }
-  h1{
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    text-align: center;
-  }
-  h2{
-    font-weight: 300;
-  }
-  a{
-  	color: #ddccff;
-  	outline: 0;
-  }
-  a:link{
-	   text-decoration: none;
-	}
-	a:visited{
-	   color: #ddccff;
-	   text-decoration: none;
-	}
-	a:active{
-	   color: #ddccff;
-	   text-decoration: none;
-	}
-  a:hover{
-  	text-decoration: none;
-  	color: white;
-  }
-
-  footer{
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    text-align: center;
-    color: #ddccff;
-    background-color: #9966ff;
-    font-size: 18;
-    box-shadow: inset 0 0 30px rgba(0,0,0,0.3);
-  }
-  div.main-heading{
-  	margin: auto;
-  	margin-bottom: 10px;
-	padding-top: 30px;
-	max-width: 780px;
-	font-size: 72px;
-	font-family: 'Lato', sans-serif;
-    font-weight: 100;
-    line-height: 1.2;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    /*text-shadow: 1px 1px 6px black;*/
-  }
-  div.main-heading b{
-  	font-weight: 300;
-  }
-
-  div.main{
-/*  	background-color: ;*/
-  	padding: 60px;
-  }
-  div.main-body{
-  	margin: auto;
-  	margin-bottom: 10px;
-	padding-top: 30px;
-	max-width: 780px;
-  	font-size: 18;
-  	font-weight: 400;
-  	text-align: center;
-  }
-  a.name-icon{
-  	padding: 5px;
-  	border-radius: 5px;
-  	border-style: dotted;
-  	border-width: 1px;
-  	font-weight: 300;
-  	font-size: 18;
-  	text-align: center;
-  	max-width: 40;
-  	max-height: 40;
-  	color: #ddccff;
-  }
-  a.name-icon:hover{
-  	background-color: rgba(0,0,0,0.1);
-  	text-decoration: none;
-  }
-  nav{
-  	height: 50px;
-  	padding: 10px;
-  }
-
-  .btn{
-  	font-family: 'Lato', sans-serif;
-  	font-weight: 400;
-  	border-radius: 10px;
-    color: white;
-
-  }
-  .btn-inverse{
-  	font-family: 'Lato', sans-serif;
-  	font-weight: 700;
-  	background-color: white;
-  	color: #9966ff;
-  }
-  .btn-inverse:hover{
-  	color: #222;
-
-  }
-  .btn-inverse:active{
-  	color: white;
-  }
-  
-
-  .btn-primary {
-  color: white;
-  background-color: #9966ff;
-  border-color: #884dff;
-  }
-  .btn-primary:focus,
-  .btn-primary.focus {
-    color: #fff;
-    background-color: #884dff  ;
-    border-color: #122b40;
-  }
-  .btn-primary:hover {
-    color: #fff;
-    background-color: #884dff  ;
-    border-color: #661aff;
-  }
-  .btn-primary:active,
-  .btn-primary.active,
-  .open > .dropdown-toggle.btn-primary {
-    color: #fff;
-    background-color: #884dff  ;
-    border-color: #661aff;
-  }
-  .btn-primary:active:hover,
-  .btn-primary.active:hover,
-  .open > .dropdown-toggle.btn-primary:hover,
-  .btn-primary:active:focus,
-  .btn-primary.active:focus,
-  .open > .dropdown-toggle.btn-primary:focus,
-  .btn-primary:active.focus,
-  .btn-primary.active.focus,
-  .open > .dropdown-toggle.btn-primary.focus {
-    color: #fff;
-    background-color: #661aff;
-    border-color: #122b40;
-  }
-  .btn-primary:active,
-  .btn-primary.active,
-  .open > .dropdown-toggle.btn-primary {
-    background-image: none;
-  }
-
-  video{
-  	border-width: 60px;
-  	border-radius: 30px;
-  }
-  div.home-image-wrap{
-  	position: absolute;
-	top: 68px;
-	left: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
-  }
-  div.home-image{
-  	height: 100%;
-  	width: 100%;
-	background-image: url("./assets/backdrop.png");
-	background-repeat: no-repeat;
-	background-size: 1400px auto;
-	max-width: 1400px;
-	margin: auto;
-	opacity: 0.1;
-  }
-  div.container-wrapper{
-    background-color: white;
-    color: black;
-    padding-top: 20px;
-    padding-bottom: 60px;
-
-  }
-  div.container-body{
-  	max-width: 900px;
-    padding: 10px;
-    margin: auto;
-    color: black;
-    font-size: 18;
-    font-weight: 300;
-  }
-  div .container-body h1{
-  	color: #9966ff;
-    text-transform: uppercase;
-    text-align: left;
-    margin-top: 60px;
-  }
-  div.container-body h2{
-    text-transform: uppercase;
-    text-align: left;
-  }
-  div .container-body h3{
-    font-weight: 300; 
-  }
-  div .container-body h4{
-    font-weight: 300; 
-    font-style: italic;
-  }
-  .nav li a:focus{
-    outline: 0;
-  	background-color: rgba(0,0,0,0);
-  }
-  
-  .nav li a:hover{
-  	outline: 0;
-  	background-color: rgba(0,0,0,0.1);
-  	border-radius: 10px;
-  }
-  .nav li a:active{
-    outline: 0;
-  	background-color: rgba(0,0,0,0.2);
-  }
-  i.devicon{
-    color: #9966ff;
-    font-size: 48;
-  }
-  h2.entry{
-    float: left;
-  }
-  h2.devicons{
-    float: right;
-    line-height: 0.5;
-  }
-  div.floating-banner{
-    overflow: auto;
-    /*position: relative;*/
-  }
-  div.floating-banner-inner{
-  }
-
-  img.thumbnail{
-    margin: 5px;
-    border-radius: 10px;
-
-  }
-</style>
 
 </head>
-
 <body>
-<nav class="navbar">
+<nav id="top_page" class="navbar">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -282,7 +30,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a id="Top" class="name-icon" href="#">KP</a>
+      <a id="Top" class="name-icon" href="#top_page">KP</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
@@ -299,18 +47,22 @@
   <div class="main-heading">Kevin <b>Peng</b></div>
   <div class="main-body">
     <p>
-      <span class="glyphicon glyphicon-education"></span> 
-      University of Waterloo 
-      Software Engineering Student
+      <span class="glyphicon glyphicon-education glyphicon-padded"></span> 
+      University of Waterloo Software Engineering Student
     </p> 
-    <p><span class="glyphicon glyphicon-envelope"></span> ktpeng@uwaterloo.ca</p>
-    <p><span class="glyphicon glyphicon-earphone"></span> +1 (226)-808-8501</p>
+    <p><span class="glyphicon glyphicon-envelope glyphicon-padded"></span> ktpeng@uwaterloo.ca</p>
+    <p><span class="glyphicon glyphicon-earphone glyphicon-padded"></span> +1 (226)-808-8501</p>
     
     <p>
-      <a href="https://github.com/kevintpeng"><i class="devicon-github-plain"></i> https://github.com/kevintpeng</a></p>
-    <p><a href="https://linkedin.com/in/kevintpeng">https://linkedin.com/in/kevintpeng</a></p>
+      <a href="https://github.com/kevintpeng">
+        <i class="devicon-github-plain glyphicon-padded"></i> github.com/kevintpeng
+      </a>
+    </p>
+    <p>
+      <a href="https://linkedin.com/in/kevintpeng">
+        <i class="fa fa-linkedin glyphicon-padded"></i> linkedin.com/in/kevintpeng</a></p>
     </br>
-    <a class="btn btn-inverse btn-lg">Continue to Portfolio</a>   
+    <a class="btn btn-inverse btn-lg">Download Resume .pdf</a>   
   </div>
 </div>
 
@@ -334,9 +86,10 @@
     </div>
     </div>
     <h3>Petro Recruit</h3>
-    <h4>Calgary AB / Waterloo ON | August - December 2015</h4>
+    <h4>Calgary AB / Waterloo ON | August &ndash; December 2015</h4>
+    <p>Built the web platform using Ruby on Rails. </p>
     <p>Petro Recruit is a startup company focused on employment in oil and gas verticals by providing a streamline platform for companies and candidates to connect.</p>
-    <p>I built the platform using Ruby on Rails.</p>
+    
     <a class="btn btn-primary btn-lg" href="petrorecruit.html">Read More...</a>
     <hr>
     
@@ -353,35 +106,39 @@
     </div>
     </div>
     <h3>PetroPredict</h3>
-    <h4>Waterloo ON | June 2014 - August 2014</h4>
+    <h4>Waterloo ON | June 2014 &ndash; August 2014</h4>
     <p>Developed a data processing application that sanitized billions of data entries from csv format and wrote sanitized tables to a database. Mapped data could then be exported in Django model format.</p>
     <p>Wrote a python parser for json data that extracted and reformatted data for graphing and visualization using D3.js.</p>
     <p>Worked with a team of software developers, using git as the Version Control System.</p>
     <a class="btn btn-primary btn-lg" href="petrorecruit.html">Read More...</a>
+
     <hr>
+
     <h1 id="Projects">Projects</h1>
+    <hr>
     <div class="floating-banner">
     <div class="floating-banner-inner">
-    <h2 class="entry">Arduino Game of Life</h2>
+    <h2 class="entry">TI Launchpad Game of Life</h2>
     <h2 class="devicons">
       <i class="devicon devicon-c-plain"></i>
-      <i class="devicon devicon-git-plain-wordmark"></i>
       <i class="devicon devicon-java-plain-wordmark"></i>
     </h2>
     </div>
     </div>
-    <p></p>
+    <p>Built for Texas Instrument's Launchpad Microprocessor using the Orbit Booster Pack hardware add-on. Conway's Game of Life is implemented on the 128x32 LCD screen, written in C. The project includes sensor integration and hardware output.</p>
+    <a class="btn btn-primary btn-lg" href="gol.html">Read More...</a>
     <hr>
 
     <div class="floating-banner">
     <div class="floating-banner-inner">
-    <h2 class="entry">Rubik's Cube Solver</h2>
+    <h2 class="entry">Rubik&rsquo;s Cube Solver</h2>
     <h2 class="devicons">
       <i class="devicon devicon-java-plain-wordmark"></i>
     </h2>
     </div>
     </div>
     <p></p>
+    <a class="btn btn-primary btn-lg" href="https://docs.google.com/document/d/1RCjFrMTkLgQ4N8LGd8ne0DKDvW5jo3IokHSUNM5IFTI/edit">Read More...</a>
     <hr>
 
     <div class="floating-banner">
@@ -393,16 +150,21 @@
     </h2>
     </div>
     </div>
+    <p>Parses and displays polynomial functions, through a chat-like interface. Able to factor any polynomial and do arithmetic operations on polynomials. </p>
+    <a class="btn btn-primary btn-lg" href="https://github.com/kevintpeng/Polynomial-Graphing-Calculator/blob/master/README.md">Read More...</a>
     <hr>
     
     <div class="floating-banner">
     <div class="floating-banner-inner">
-    <h2 class="entry">Dota Captain, Win-rate Analysis</h2>
+    <h2 class="entry">Winrate Analysis, Dota Captain</h2>
     <h2 class="devicons">
       <i class="devicon devicon-python-plain-wordmark"></i>
     </h2>
     </div>
     </div>
+    <p>Scrapes billions of data entries for winrate statistics from the popular game Dota 2.</p> 
+    <p>Analyzes matchups for each hero and creates an index value for a given hero's success against another. The compiled indexes are stored in a table of 100,000 index values that are retreived based on user input.</p> 
+    <p>A user can input an enemy lineup of up to 5 heroes and Dota Captain will return a list of all remaining heroes in order of statistical success against the input team.</p>
     <hr>
 
     <div class="floating-banner">
@@ -410,21 +172,26 @@
     <h2 class="entry">Farthest Points in a Set</h2>
     <h2 class="devicons">
       <i class="devicon devicon-java-plain-wordmark"></i>
-      
     </h2>
     </div>
     </div>
+    <p>Computes the farthest pair of points in a set of points, implementing convex hull finding and anti-podal analysis.</p>
+    <a class="btn btn-primary btn-lg" href="https://github.com/kevintpeng/Farthest-Points-in-a-Set/blob/master/README.md">Read More...</a>
+    
     <hr>
     
     <div class="floating-banner">
     <div class="floating-banner-inner">
-    <h2 class="entry">Mandelbrot and Julia Set Generator</h2>
+    <h2 class="entry">Mandelbrot &amp; Julia Set Generator</h2>
     <h2 class="devicons">
       <i class="devicon devicon-java-plain-wordmark"></i>
       
     </h2>
     </div>
     </div>
+    <p>
+      Interactive 
+    </p>
     <hr>
 
     <div class="floating-banner">
@@ -436,6 +203,7 @@
     </h2>
     </div>
     </div>
+    <p>A simple demonstration of Ruby on Rails, following MVC separation, and authenticated with devise.</p>
     <hr>
 
     <h1 id="Awards">Awards</h1> 
@@ -473,12 +241,13 @@
     </h2>
     </div>
     </div>
-    <p>For the highest level of involvement and achievement in academics, athletics and activities at Sir John A. Macdonald Secondary School. Awarded for involvement in Senior Band, Captain of school Volleyball team, Basketball Team, Computer Science Club, Math Club, Science Club, DECA</p>
+    <h3>Sir John A. Macdonald Secondary School</h3>
+    <p>For the highest level of involvement and achievement in academics, athletics and activities at Sir John A. Macdonald Secondary School. Awarded for cross-disciplinary involvement in senior band, jazz band, junior band, captain of school volleyball team, basketball team, track and field, computer science club, math club, science club, DECA (business club) and building bridges (global issues club). </p>
     <hr>
 
     <div class="floating-banner">
     <div class="floating-banner-inner">
-    <h2 class="entry">Silver Medalist and Best in Category ($3200)</h2>
+    <h2 class="entry">Silver Medalist &amp; Best in Category ($3200)</h2>
     <h2 class="devicons">
       2011
     </h2>
@@ -492,7 +261,7 @@
     <div class="floating-banner-inner">
     <h2 class="entry">3x Gold Medalist (~$500)</h2>
     <h2 class="devicons">
-      2010-2012
+      2010&ndash;2012
     </h2>
     </div>
     </div>
@@ -504,7 +273,7 @@
     <div class="floating-banner-inner">
     <h2 class="entry">Other Achievements</h2>
     <h2 class="devicons">
-      2015-2010
+      2010&ndash;2015
     </h2>
     </div>
     </div>
@@ -522,4 +291,18 @@
 </div>
 
 </body>
-</html>
+
+<footer>
+  <h1>Kevin Peng</h1>
+  <hr style="max-width: 500px;">
+  <p>
+    <span class="glyphicon glyphicon-education glyphicon-padded"></span> 
+    University of Waterloo Software Engineering Student
+  </p> 
+  <p><span class="glyphicon glyphicon-envelope glyphicon-padded"></span> ktpeng@uwaterloo.ca</p>
+  <p><span class="glyphicon glyphicon-earphone glyphicon-padded"></span> +1 (226)-808-8501</p>
+  
+  <p>
+    <a href="https://github.com/kevintpeng"><i class="devicon-github-plain glyphicon-padded"></i> github.com/kevintpeng</a></p>
+  <p><a href="https://linkedin.com/in/kevintpeng"><i class="fa fa-linkedin glyphicon-padded"></i> linkedin.com/in/kevintpeng</a></p>
+</footer></html>
