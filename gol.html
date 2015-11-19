@@ -61,7 +61,7 @@
     <video controls="controls" name="Launchpad Demo Video" src="assets/output.ogv" width="100%" controls autoplay loop align="center" style="margin-top:20px;margin-bottom:20px;"></video>
     <p>Conway&rsquo;s Game of Life is a zero-player game, during which cells, based on a set of rules, can live, multiply or die. Depending on the game&rsquo;s initiate state, the cells will form various patterns, which will be displayed on the Booster Pack&rsquo;s OLED display. </p>
     <h3>Software Implementation</h3>
-    <p>The game of life engine is written in C, using 2 arrays. The first array represents the current state of life while the second iterates through the first array to generate the next state. After the next state is fully generated, it is compressed to a bitmap format. The 128x32 OLED display takes a row major bitmap of column mapped bytes as input. The following is an example of a bitmap output by the C program:</p>
+    <p>The game of life engine is written in C, using 2 arrays. The first array represents the current state of life while the second iterates through the first array to generate the next state. After the next state is fully generated, it is compressed to a bitmap format. The 128x32 OLED display takes a row major bitmap of column mapped bytes as input. In this case, the bitmap is 4 (height/byte size) rows of 128 bytes. Since a cell is either dead or alive, each cell is represented by exactly one byte in the bitmap. The following is an example of a bitmap output by the C program:</p>
     <img src="./assets/gol_example.png" width="128" height="32"></img>
     <h3>Hardware Integration</h3>
     <p>
