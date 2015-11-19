@@ -58,12 +58,16 @@
     </div>
     </div>
     <p>Built for Texas Instrument's Launchpad Microprocessor using the Orbit Booster Pack hardware add-on. Conway's Game of Life is implemented on the 128x32 LCD screen, written in C. The project includes sensor integration and hardware output.</p>
-    <video controls="controls" name="Launchpad Video" src="assets/output.mov" width="100%" controls autoplay loop align="center" style="margin-top:20px;margin-bottom:20px;"></video>
+    <h3>Launchpad Demonstration </h3>
+    <video controls="controls" name="Launchpad Demo Video" src="assets/output.ogv" width="100%" controls autoplay loop align="center" style="margin-top:20px;margin-bottom:20px;"></video>
     <p>Conway&rsquo;s Game of Life is a zero-player game, during which cells, based on a set of rules, can live, multiply or die. Depending on the game&rsquo;s initiate state, the cells will form various patterns, which will be displayed on the Booster Pack&rsquo;s OLED display. </p>
+    <h3>Software Implementation</h3>
+    <p>The game of life engine is written in C, using a representative array and a temporary array. The first array represents the current state of life while the second iterates through the first array to generate the next state. After the next state is fully generated, it is compressed to a bitmap format The 128x32 OLED display takes a row major bitmap of column mapped bytes as input. The following is an example of a bitmap output by the C program:</p>
+    <img src="./assets/gol_example.png" width="128" height="32"></img>
     <h3>Hardware Integration</h3>
     <p>
-    The 128x32 OLED display takes a row major bitmap of column mapped bytes as input.
-    Using the Booster Pack&rsquo;s accelerometer and potentiometer, the simulated life will be dependent, not only on the size of its container, but also, on its surroundings. The potentiometer will vary the speed of growth and death, while a shake of the Launchpad and Booster Pack will wipe all life and start again. Finally, an LED that will indicate the current progression of life on the display. For example, the LED will turn from red to green when life becomes sustainable.</p>
+    
+    <p>Using the Booster Pack&rsquo;s accelerometer and potentiometer, the simulated life will be dependent, not only on the size of its container, but also, on its surroundings. The potentiometer will vary the speed of growth and death, while a shake of the Launchpad and Booster Pack will wipe all life and start again. Finally, an LED that will indicate the current progression of life on the display. For example, the LED will turn from red to green when life becomes sustainable.</p>
     <a href="https://github.com/kevintpeng/Launchpad_GOL" class="btn btn-primary btn-lg"><i class="devicon-github-plain"></i> Source Code</a>
   </div>
 </div>
