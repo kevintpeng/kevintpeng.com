@@ -117,14 +117,19 @@ nav{
 
 
 .btn-primary {
-color: #fff !important; 
+  color: #9966ff !important;
+  background-color: white;
+  border-color: #9966ff;
+
+
+/*color: #fff !important; 
 background-color: #9966ff;
-border-color: #884dff;
+border-color: #884dff;*/
 }
 .btn-primary:focus,
 .btn-primary.focus {
   color: #fff ;
-  background-color: #884dff  ;
+  background-color: #884dff ;
   border-color: #122b40;
 }
 .btn-primary:hover {
@@ -199,6 +204,7 @@ div .container-body h1{
   text-transform: uppercase;
   text-align: left;
   margin-top: 60px;
+  font-size: 48px;
 }
 div.container-body h2{
   text-transform: uppercase;
@@ -234,6 +240,7 @@ h2.entry{
 }
 h2.devicons{
   float: right;
+  text-align: right;
 }
 div.floating-banner{
   overflow: auto;
@@ -253,5 +260,4 @@ img.thumbnail{
 img.thumbnail-img{
   max-height: 200px; 
   max-width: 100%;
-  margin: 0 auto;
 }
