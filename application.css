@@ -133,7 +133,7 @@ border-color: #884dff;*/
   border-color: #122b40;
 }
 .btn-primary:hover {
-  color: #fff;
+  color: #fff !important;
   background-color: #884dff  ;
   border-color: #661aff;
 }
