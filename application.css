@@ -15,6 +15,11 @@ code{
 	border-radius: 4px;
 }
 
+i{
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;  
+}
+
 h1{
   font-family: 'Lato', sans-serif;
   font-weight: 300;
