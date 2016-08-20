@@ -1,0 +1,16 @@
+index: 2
+section: Projects
+title: WINRATE AND STATISTICAL ANALYZER FOR DOTA
+tech:
+  - python
+desc: |
+  Scrapes aggregated data over millions of data entries for winrate statistics from the popular game Dota 2.
+
+  Analyzes matchups for each hero and creates an index value for a given hero's success against another. The compiled indexes are stored in a table of 100,000 index values that are retreived based on user input.
+
+  A user can input an enemy lineup of up to 5 heroes and Dota Captain will return a list of all remaining heroes in order of statistical success against the input team.
+
+buttons:
+  - devicon: github
+    text: Source Code
+    link: https://github.com/kevintpeng/Dota-Counter-Picker

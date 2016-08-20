@@ -1,0 +1,11 @@
+index: 8
+section: Projects
+title: Website Generator
+tech:
+  - ruby
+  - html5
+desc: Used to generate this website! After designing the intended html and css for the web page, repetitive components were modularized, and defined with `YAML` rather than repeating lot's of html. This also let's me use `markdown` format to write notes and blog posts.
+buttons:
+  - devicon: github
+    text: Source Code
+    link: https://github.com/kevintpeng/kevintpeng.github.io/generate

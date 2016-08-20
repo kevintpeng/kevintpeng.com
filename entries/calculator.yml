@@ -1,0 +1,13 @@
+index: 3
+section: Projects
+title: POLYNOMIAL GRAPHING CALCULATOR
+tech:
+  - java
+desc: Parses and displays polynomial functions, through a command line interface. Able to factor any polynomial and do arithmetic operations on polynomials.
+
+buttons:
+  - text: Read More...
+    link: https://github.com/kevintpeng/Polynomial-Graphing-Calculator/blob/master/README.md
+  - devicon: github
+    text: Source Code
+    link: https://github.com/kevintpeng/Polynomial-Graphing-Calculator

@@ -1,0 +1,11 @@
+index: 7
+section: Projects
+title: Ruby Crawler & Scraper
+tech:
+  - ruby
+  - html5
+desc: General crawling tool that emulates a browser, enabling entire website crawling. Data can be processed and inserted into SQL data stores, or zipped locally for offline browsing of web pages.
+buttons:
+  - devicon: github
+    text: Source Code
+    link: https://github.com/kevintpeng/ruby-scraper/blob/master/scraper.rb

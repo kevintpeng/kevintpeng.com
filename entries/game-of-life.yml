@@ -1,0 +1,13 @@
+index: 5
+section: Projects
+title: TI LAUNCHPAD GAME OF LIFE
+tech:
+  - c
+  - java
+desc: Built for Texas Instrument's Launchpad Microprocessor using the Orbit Booster Pack hardware add-on. Conway's Game of Life is implemented on the 128x32 LCD screen, written in C. The project includes sensor integration and hardware output.
+buttons:
+  - text: Read More...
+    link: ./gol.html
+  - devicon: github
+    text: Source Code
+    link: https://github.com/kevintpeng/Launchpad_GOL
