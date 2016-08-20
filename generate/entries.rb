@@ -35,7 +35,7 @@ module Entries
     #     link: https://engineering.shopify.com/
 
     def parse_yml(yml, markdown)
-      yml['tech'].map! { |t| "devicon devicon-#{t}-plain" }
+      yml['tech'].map! { |t| t.include?('-') ? "devicon devicon-#{t}" : "devicon devicon-#{t}-plain-wordmark" }
       yml['buttons'].map! { |hash| render_button(hash) }
       yml['desc'] = markdown.render yml['desc']
       yml

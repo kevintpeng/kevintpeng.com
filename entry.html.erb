@@ -11,11 +11,11 @@
 </div>
 <h3><%= @entry['company']%></h3>
 <h4>
-  <% subheader = "" %>
+  <% subheader = "<i>" %>
   <% subheader << @entry['place'] if @entry['place'] %>
   <% subheader << " | " if @entry['place'] && @entry['time'] %>
   <% subheader << @entry['time'].gsub('-', '&ndash;') if @entry['time']%>
-  <%= subheader %>
+  <%= subheader << "</i>" %>
 </h4>
 <%= @entry['desc']%>
 <% @entry['buttons'].each do |button|%>
