@@ -1,17 +1,19 @@
+# This file auto generates my entire website.
 require 'redcarpet'
 require 'htmlbeautifier'
 require 'pathname'
 require 'erb'
 require 'yaml'
+
 require './generate/index'
 
+# entries are any work experiences, projects or awards
 @entries = Index.generate_entries
 @entries.each do |section, entries|
-  puts section
-  puts "#ENTRIES: #{entries}"
   @entry_template ||= File.read('entry.html.erb')
   @entry_renderer ||= ERB.new(@entry_template)
   @entries[section] = entries.map do |entry|
+    # render each entry
     @entry = entry
     @entry_renderer.result() if @entry
   end

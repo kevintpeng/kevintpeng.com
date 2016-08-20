@@ -1,3 +1,4 @@
+# Logic behind generating the index page
 module Index
   class << self
     def generate_entries
