@@ -10,7 +10,7 @@ module Entries
         entries[section] ||= []
         entries[section][entry_yml['index']] = parse_yml(entry_yml, markdown)
       end
-      Fancy.puts "All yamls for entries successfully parsed."
+      Fancy.puts "All yml files for entries were successfully parsed."
       entries
     end
 
