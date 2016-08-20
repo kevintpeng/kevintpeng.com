@@ -1,52 +1,38 @@
-# Logic behind generating the index page
-module Index
-  class << self
-    def generate_entries
-      puts "generating"
-      markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, extensions = {})
-      entries = {}
-      Dir.glob('./entries/*.yml') do |file|
-        entry_yml = YAML.load_file(file)
-        section = entry_yml['section']
-        entries[section] ||= []
-        entries[section][entry_yml['index']] = parse_yml(entry_yml, markdown)
-      end
-      entries
-    end
-
-    private
-
-    # EXAMPLE:
-    # index: 3
-    # section: Work Experience
-    # title: Production Engineering Intern
-    # tech: (optional)
-    #   - ruby
-    #   - nginx
-    # year: 2016 (optional)
-    # company: Name
-    # place: Ottawa, Canada (optional)
-    # time: May 2016 - August 2016 (optional)
-    # desc: *any* markdown
-    # buttons:
-    #   - glyphicon: link (optional)
-    #     devicon: ruby (optional/alternative)
-    #     text: Published Article on Shopify Engineering Blog
-    #     link: https://engineering.shopify.com/
-
-    def parse_yml(yml, markdown)
-      yml['tech'].map! { |t| "devicon devicon-#{t}-plain" }
-      yml['buttons'].map! { |hash| render_button(hash) }
-      yml['desc'] = markdown.render yml['desc']
-      yml
-    end
-
-    def render_button(button_hash)
-      button = "<a class=\"btn btn-primary btn-lg\" href=\"#{button_hash['link']}\">"
-      icon = "<span class=\"glyphicon glyphicon-#{button_hash['glyphicon']}\"></span>" if button_hash['glyphicon']
-      icon = "<span class=\"devicon devicon-#{button_hash['glyphicon']}-plain\"></span>" if button_hash['devicon']
-      icon ||= ""
-      button = "#{button}#{icon} #{button_hash['text']}</a>"
+# entries are any work experiences, projects or awards.
+# generates and orders html for each entry,
+# returns a hash of {<section>: <list of entry html>}
+def prepare_entires
+  @entries = Index.generate_entries
+  @entries.each do |section, entries|
+    @entry_template ||= File.read('entry.html.erb')
+    @entry_renderer ||= ERB.new(@entry_template)
+    @entries[section] = entries.map do |entry|
+      # render each entry
+      @entry = entry
+      @entry_renderer.result() if @entry
     end
   end
+end
+
+def write_index_html
+  sections = ['Work Experience', 'Projects', 'Awards']
+  index = ''
+  puts @entries
+  sections.each do |section|
+    index << "<h1>#{section}</h1>\n"
+    (@entries[section] || []).reverse_each do |entry|
+      index << "#{entry}\n" if entry
+    end
+  end
+  # these three values are used in the index template
+  @body = index
+  @contact = File.read('contact.html')
+  @footer = ERB.new(File.read('footer.html.erb')).result()
+
+  index_template = ERB.new(File.read('index.html.erb'))
+  index = index_template.result()
+  # indents and cleans html output
+  index = HtmlBeautifier.beautify(index)
+
+  File.open("index.html", 'w') { |f| f.write(index)}
 end
