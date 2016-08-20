@@ -1,0 +1,24 @@
+index: 2
+section: Work Experience
+title: FOUNDER, LEAD DEVELOPER
+tech:
+  - ruby
+  - rails
+  - postgresql
+  - amazonwebservices
+  - bootstrap
+  - css3
+  - html5
+company: Petro Recruit
+place: Calgary AB / Waterloo ON
+time: August 2015 - Present
+desc: |
+  Full-stack web development in ruby on rails, designing and building the site and its entire infrastructure system, including an elasticsearch cluster, SQL database, machine learning jobs and scraper jobs. We implemented a naïve bayesian classifier to match job postings into categories.
+
+  Our company currently has 5 figure funding, over 3000 job postings and thousands of active users. The platform is powered by robust aggregation system, designed to analyze and categorize job data from any source.
+
+  Web crawling and scraping with integrated machine learning enables our platform to better match candidates with suitable job opportunities.
+buttons:
+  - glyphicon: link
+    text: Petro Recruit
+    link: http://petrorecruit.ca

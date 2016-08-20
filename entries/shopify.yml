@@ -4,9 +4,9 @@ title: Production Engineering Intern
 tech:
   - ruby
   - nginx
-  - go
+  - go-plain
   - amazonwebservices
-  - linux
+  - linux-plain
 company: |
   <img alt="Shopify" width="170" class="thumbnail-img" src="./assets/Shopify_Logo.png">
 place: Ottawa, Canada
