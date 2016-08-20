@@ -3,6 +3,7 @@ This is my personal website, I've written a site generator to more easily modula
 
 ### Editing & Developing
 This integrates dev, a command line tool that I developed at Shopify. To start editing and developing:
+
 1. Install dev
 2. run `dev up`
 3. Make changes and run `dev build`
