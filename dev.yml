@@ -1,0 +1,9 @@
+# Config file for shopify project, dev, that I worked on at shopify
+# check it out at github.com/shopify/dev
+
+up:
+  - ruby: 2.3.1
+  - bundler
+
+open:
+  site: http://kpeng.ca
