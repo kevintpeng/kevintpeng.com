@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Kevin Peng</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+<!-- lato from google -->
+<link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,300italic,400italic,700' rel='stylesheet' type='text/css'>
+
+<!-- Octicons -->
+<link rel="stylesheet" href="./assets/octicons/octicons.css">
+
+<!-- devicons -->
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+
+<!-- Social Media Icons -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="./application.css">
+</head>
+<body>
+  <div class ="main">
+    <div class="home-image-wrap"><div class="home-image"></div></div>
+    <div class="main-heading">Kevin <b>Peng</b></div>
+    <div class="main-body">
+
+      <%= @contact%>
+      <a class="btn btn-inverse btn-lg" href="./assets/kevin-peng-resume.pdf" download>Download Resume .pdf</a>
+      <br><br>
+       <i>
+      <p>Ferocious learner, driven to innovate, and passionate about software infrastructure and design. I'm looking for internships and excited to solve interesting problems, let me know if you need another teammate!</p>
+    </i>
+    </div>
+  </div>
+
+  <div class="container-wrapper">
+    <div class="container-body">
+      <%= @body%>
+    </div>
+  </div>
+</body>
+<%= @footer%>
+</html>

@@ -1,0 +1,18 @@
+<hr>
+<div class="floating-banner floating-banner-inner">
+  <h2 class="@entry"><%= @entry['title']%></h2>
+  <h2 class="devicons">
+    <%= (@entry['tech'] || []).each {|tech| tech } %>
+    <%= " #{@entry['year']}" if @entry['year'] %>
+  </h2>
+</div>
+<h3><%= @entry['company']%></h3>
+<h4>
+  <%= @entry['place'] if @entry['place'] %>
+  <%= " | " if @entry['place'] && @entry['time'] %>
+  <%= @entry['time'].gsub('-', '&ndash;' if @entry['time'])%>
+</h4>
+<%= @entry['desc']%>
+<% @entry['buttons'].each |button|%>
+  <%= button%>
+<%end%>
