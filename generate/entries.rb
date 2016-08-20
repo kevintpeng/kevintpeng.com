@@ -2,7 +2,6 @@
 module Entries
   class << self
     def generate
-      puts "generating"
       markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, extensions = {})
       entries = {}
       Dir.glob('./entries/*.yml') do |file|
@@ -11,6 +10,7 @@ module Entries
         entries[section] ||= []
         entries[section][entry_yml['index']] = parse_yml(entry_yml, markdown)
       end
+      Fancy.puts "All yamls for entries successfully parsed."
       entries
     end
 
@@ -35,9 +35,9 @@ module Entries
     #     link: https://engineering.shopify.com/
 
     def parse_yml(yml, markdown)
-      yml['tech'].map! { |t| t.include?('-') ? "devicon devicon-#{t}" : "devicon devicon-#{t}-plain-wordmark" }
-      yml['buttons'].map! { |hash| render_button(hash) }
-      yml['desc'] = markdown.render yml['desc']
+      yml['tech'].map! { |t| t.include?('-') ? "devicon devicon-#{t}" : "devicon devicon-#{t}-plain-wordmark" } if yml['tech']
+      yml['buttons'].map! { |hash| render_button(hash) } if yml['buttons']
+      yml['desc'] = markdown.render(yml['desc']) if yml['desc']
       yml
     end
 

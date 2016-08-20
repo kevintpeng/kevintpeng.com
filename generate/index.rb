@@ -12,12 +12,12 @@ def prepare_entires
       @entry_renderer.result() if @entry
     end
   end
+  Fancy.puts 'All Entries are rendered.'
 end
 
 def write_index_html
   sections = ['Work Experience', 'Projects', 'Awards']
   index = ''
-  puts @entries
   sections.each do |section|
     index << "<h1>#{section}</h1>\n"
     (@entries[section] || []).reverse_each do |entry|
@@ -33,6 +33,6 @@ def write_index_html
   index = index_template.result()
   # indents and cleans html output
   index = HtmlBeautifier.beautify(index)
-
+  Fancy.puts 'Index Successfully Generated.'
   File.open("index.html", 'w') { |f| f.write(index)}
 end

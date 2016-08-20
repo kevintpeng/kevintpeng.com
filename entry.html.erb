@@ -1,4 +1,3 @@
-<% puts "ENTRY: #{@entry}"%>
 <hr>
 <div class="floating-banner floating-banner-inner">
   <h2 class="entry"><%= @entry['title']%></h2>
@@ -20,6 +19,6 @@
   <%= subheader << "</i>" if @entry['place'] || @entry['time']%>
 </h4>
 <%= @entry['desc']%>
-<% @entry['buttons'].each do |button|%>
+<% (@entry['buttons'] || []).each do |button|%>
   <%= button%>
 <%end%>

@@ -5,6 +5,7 @@ require 'pathname'
 require 'erb'
 require 'yaml'
 
+require './generate/fancy'
 require './generate/entries'
 require './generate/index'
 
