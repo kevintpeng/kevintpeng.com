@@ -4,7 +4,7 @@
 def prepare_entires
   @entries = Entries.generate
   @entries.each do |section, entries|
-    @entry_template ||= File.read('entry.html.erb')
+    @entry_template ||= File.read('./generate/entry.html.erb')
     @entry_renderer ||= ERB.new(@entry_template)
     @entries[section] = entries.map do |entry|
       # render each entry
@@ -24,12 +24,9 @@ def write_index_html
       index << "#{entry}\n" if entry
     end
   end
-  # these three values are used in the index template
-  @body = index
-  @contact = File.read('contact.html')
-  @footer = ERB.new(File.read('footer.html.erb')).result()
 
-  index_template = ERB.new(File.read('index.html.erb'))
+  @body = index
+  index_template = ERB.new(File.read('./generate/index.html.erb'))
   index = index_template.result()
   # indents and cleans html output
   index = HtmlBeautifier.beautify(index)
