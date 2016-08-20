@@ -2,7 +2,7 @@
 # generates and orders html for each entry,
 # returns a hash of {<section>: <list of entry html>}
 def prepare_entires
-  @entries = Index.generate_entries
+  @entries = Entries.generate
   @entries.each do |section, entries|
     @entry_template ||= File.read('entry.html.erb')
     @entry_renderer ||= ERB.new(@entry_template)
