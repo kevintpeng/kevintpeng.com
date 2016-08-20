@@ -1,0 +1,10 @@
+index: 0
+section: Projects
+title: Mandelbrot and Julia Sets
+tech:
+  - java
+desc: Interactive Mandelbrot set generator with corresponding julia sets using complex number implementation. The view is zoomable, displaying closer snapshots of the sets. They are displayed using an rgb color scale.
+buttons:
+  - devicon: github
+    text: Source Code
+    link: https://github.com/kevintpeng/Mandelbrot_and_Julia_Sets
