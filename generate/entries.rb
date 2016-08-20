@@ -44,7 +44,7 @@ module Entries
     def render_button(button_hash)
       button = "<a class=\"btn btn-primary btn-lg\" href=\"#{button_hash['link']}\">"
       icon = "<span class=\"glyphicon glyphicon-#{button_hash['glyphicon']}\"></span>" if button_hash['glyphicon']
-      icon = "<span class=\"devicon-#{button_hash['glyphicon']}-plain\"></span>" if button_hash['devicon']
+      icon = "<span class=\"devicon devicon-#{button_hash['devicon']}-plain\"></span>" if button_hash['devicon']
       icon ||= ""
       button = "#{button}#{icon} #{button_hash['text']}</a>"
     end
