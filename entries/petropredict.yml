@@ -20,5 +20,8 @@ desc: |
   <p>PetroPredict team from left to right: Andrew Andrade, Kevin Peng (myself), Ksenia Merkoukhina, Jay Estrella</p>
 buttons:
   - glyphicon: link
-    text: Published Article on Velocity 
+    text: Published Article on Velocity
     link: http://velocity.uwaterloo.ca/2014/08/student-experiences-startup-life/
+  - devicon: github
+    text: Project Source Code
+    link: https://github.com/kevintpeng/Data-Dumper
