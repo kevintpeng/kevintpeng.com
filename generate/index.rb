@@ -1,10 +1,10 @@
 module Index
   class << self
-    attr_reader :entries
     def generate_entries
+      puts "generating"
       markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, extensions = {})
       entries = {}
-      Dir.glob('../entries/*.yml') do |file|
+      Dir.glob('./entries/*.yml') do |file|
         entry_yml = YAML.load_file(file)
         section = entry_yml['section']
         entries[section] ||= []
@@ -35,20 +35,17 @@ module Index
 
     def parse_yml(yml, markdown)
       yml['tech'].map! { |t| "devicon devicon-#{t}-plain" }
-      yml['buttons'].map! { |hash| render_button(hash, markdown) }
+      yml['buttons'].map! { |hash| render_button(hash) }
       yml['desc'] = markdown.render yml['desc']
-      @entry_template ||= File.read('entry.html.erb')
-      @entry_renderer ||= ERB.new(@entry_template)
-      @entry = yml
-      @entry_renderer.result()
+      yml
     end
 
-    def render_button(button_hash, markdown)
+    def render_button(button_hash)
       button = "<a class=\"btn btn-primary btn-lg\" href=\"#{button_hash['link']}\">"
       icon = "<span class=\"glyphicon glyphicon-#{button_hash['glyphicon']}\"></span>" if button_hash['glyphicon']
       icon = "<span class=\"devicon devicon-#{button_hash['glyphicon']}-plain\"></span>" if button_hash['devicon']
       icon ||= ""
-      button = "#{button}#{icon} #{markdown.render(button_hash['text'])}</a>"
+      button = "#{button}#{icon} #{button_hash['text']}</a>"
     end
   end
 end

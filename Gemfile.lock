@@ -1,12 +1,14 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    htmlbeautifier (1.1.1)
     redcarpet (3.3.4)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  htmlbeautifier
   redcarpet
 
 BUNDLED WITH
