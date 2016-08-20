@@ -9,13 +9,15 @@
     <%= " #{@entry['year']}" if @entry['year'] %>
   </h2>
 </div>
+<% if @entry['company']%>
 <h3><%= @entry['company']%></h3>
+<%end%>
 <h4>
   <% subheader = "<i>" %>
   <% subheader << @entry['place'] if @entry['place'] %>
   <% subheader << " | " if @entry['place'] && @entry['time'] %>
   <% subheader << @entry['time'].gsub('-', '&ndash;') if @entry['time']%>
-  <%= subheader << "</i>" %>
+  <%= subheader << "</i>" if @entry['place'] || @entry['time']%>
 </h4>
 <%= @entry['desc']%>
 <% @entry['buttons'].each do |button|%>
