@@ -4,7 +4,7 @@ module Entries
     def generate
       markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, extensions = {})
       entries = {}
-      Dir.glob('..//entries/**/*.yml') do |file|
+      Dir.glob(File.expand_path('../../../entries/**/*.yml', __FILE__)) do |file|
         entry_yml = YAML.load_file(file)
         section = entry_yml['section']
         entries[section] ||= []
