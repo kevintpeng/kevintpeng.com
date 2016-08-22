@@ -8,7 +8,8 @@ module Entries
         entry_yml = YAML.load_file(file)
         section = entry_yml['section']
         entries[section] ||= []
-        entries[section][entry_yml['index']] = parse_yml(entry_yml, markdown)
+        parsed = parse_yml(entry_yml, markdown)
+        entries[section][entry_yml['index']] = parsed unless parsed['deprecated'] || parsed['disabled']
       end
       Fancy.puts "All yml files for entries were successfully parsed."
       entries
@@ -17,6 +18,7 @@ module Entries
     private
 
     # EXAMPLE:
+    # disabled: false
     # index: 3
     # section: Work Experience
     # title: Production Engineering Intern
@@ -42,10 +44,12 @@ module Entries
     end
 
     def render_button(button_hash)
+      # generates the button itself
       button = "<a class=\"btn btn-primary btn-lg\" href=\"#{button_hash['link']}\">"
+      # resolve icon
       icon = "<span class=\"glyphicon glyphicon-#{button_hash['glyphicon']}\"></span>" if button_hash['glyphicon']
       icon = "<span class=\"devicon devicon-#{button_hash['devicon']}-plain\"></span>" if button_hash['devicon']
-      icon ||= ""
+      # renders contents of the button
       button = "#{button}#{icon} #{button_hash['text']}</a>"
     end
   end
