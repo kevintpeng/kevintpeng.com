@@ -6,7 +6,7 @@ up:
   - bundler
 
 commands:
-  build: ruby generate.rb && git add index.html && git commit -m "generated index.html" && open index.html
+  build: ruby generate/generate.rb && git add index.html && git commit -m "generated index.html" && open index.html
 
 open:
   site: http://kpeng.ca

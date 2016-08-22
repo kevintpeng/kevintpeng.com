@@ -1,10 +1,13 @@
+require 'index/entries'
+require 'fancy'
+
 # entries are any work experiences, projects or awards.
 # generates and orders html for each entry,
 # returns a hash of {<section>: <list of entry html>}
 def prepare_entires
   @entries = Entries.generate
   @entries.each do |section, entries|
-    @entry_template ||= File.read('./generate/entry.html.erb')
+    @entry_template ||= File.read('./index/entry.html.erb')
     @entry_renderer ||= ERB.new(@entry_template)
     @entries[section] = entries.map do |entry|
       # render each entry
@@ -26,10 +29,10 @@ def write_index_html
   end
 
   @body = index
-  index_template = ERB.new(File.read('./generate/index.html.erb'))
+  index_template = ERB.new(File.read(File.expand_path('../index.html.erb', __FILE__)))
   index = index_template.result()
   # indents and cleans html output
   index = HtmlBeautifier.beautify(index)
   Fancy.puts 'Index Successfully Generated.'
-  File.open("index.html", 'w') { |f| f.write(index)}
+  File.open("site/index.html", 'w') { |f| f.write(index)}
 end
