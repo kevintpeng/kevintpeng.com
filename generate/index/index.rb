@@ -1,5 +1,4 @@
 require 'index/entries'
-require 'fancy'
 
 # entries are any work experiences, projects or awards.
 # generates and orders html for each entry,

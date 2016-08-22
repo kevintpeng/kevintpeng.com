@@ -7,6 +7,7 @@ require 'yaml'
 
 $LOAD_PATH.unshift(File.expand_path('../', __FILE__))
 require 'index/index'
+require 'fancy'
 
 @contact = File.read(File.expand_path('../general/contact.html', __FILE__))
 @footer = ERB.new(File.read(File.expand_path('../general/footer.html.erb', __FILE__))).result()
