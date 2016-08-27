@@ -71,8 +71,12 @@
         <h4>
           <i>Ottawa, Canada | May 2016 &ndash; August 2016</i>
         </h4>
-        <p>As a part of the Developer Infrastructure team, I developed Shopify&#39;s internal tooling for development environments named <code>dev</code>, which creates reproducible development environments in one command, similar to <code>vagrant up</code>, which replicates the production environment of Shopify, including database sharding and several services like redis and nginx. I rearchitected the development environment tool to support package extensions, containing custom commands, custom tasks to run for projects, and configurations.</p>
-        <p>I also built an NGINX reverse proxy that caches dependencies, optimizing bundle install times and mitigating the impact of upstream outages. I deployed the reverse proxy caches using Chef, and provisioned on EC2.</p>
+        <ul>
+          <li>developed Shopify&#39;s internal tooling for development environments named <code>dev</code></li>
+          <li>built a package management system for <code>dev</code>, supporting extensions containing custom commands, custom tasks to run for projects, and configurations</li>
+          <li>architected an NGINX reverse proxy that caches dependencies, optimizing <code>bundle install</code> times and mitigating the impact of upstream outages</li>
+          <li>deployed the reverse proxy caches using Chef, and provisioned on an EC2 node</li>
+        </ul>
         <a class="btn btn-primary btn-lg" href="https://engineering.shopify.com/"><span class="glyphicon glyphicon-link"></span> Published Article on Shopify Engineering Blog</a>
         <hr>
         <div class="floating-banner floating-banner-inner">
