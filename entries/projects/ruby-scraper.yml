@@ -13,3 +13,4 @@ buttons:
   - devicon: github
     text: Source Code
     link: https://github.com/kevintpeng/ruby-scraper/
+resume: true

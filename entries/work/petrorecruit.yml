@@ -15,7 +15,7 @@ time: August 2015 - Present
 desc: |
   Our company currently has 5 figure funding, over 3000 job postings and thousands of active users. The platform is powered by robust aggregation system, with integrated machine learning to enable our platform to better match candidates with suitable job opportunities.
 
-  - Full-stack web development in ruby on rails, designing and building the site
+  - Full-stack web development with ruby on rails
   - architected entire infrastructure system, including an elasticsearch cluster, SQL database, machine learning jobs and scraper jobs
   - implemented a naïve bayesian classifier to match job postings into categories
 
@@ -23,3 +23,4 @@ buttons:
   - glyphicon: link
     text: Petro Recruit
     link: http://petrorecruit.ca
+resume: true

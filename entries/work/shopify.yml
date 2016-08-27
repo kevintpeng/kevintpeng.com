@@ -3,22 +3,22 @@ section: Work Experience
 title: Production Engineering Intern
 tech:
   - ruby
-  - nginx
   - go-plain
+  - nginx
   - amazonwebservices
-  - linux-plain
+
 company: |
   <img alt="Shopify" width="170" class="thumbnail-img" src="./assets/Shopify_Logo.png">
 place: Ottawa, Canada
 time: May 2016 - August 2016
 desc: |
     ### Internal Tooling
-    - built a package management system for internal tool `dev`, supporting extensions containing custom commands, custom tasks to run for projects, and configurations
+    - built a package management system for internal tool `dev` using `ruby` and `bash`, supporting extensions containing custom commands, custom tasks to run for projects, and configurations
     - open sourced `dev` by utilizing my package system to factor out shopify specific code
 
     ### Developer Infrastructure
     - architected an NGINX reverse proxy that caches dependencies, optimizing `bundle install` times and mitigating the impact of upstream outages
-    - deployed the reverse proxy caches using Chef, and provisioned on an EC2 node
+    - deployed the reverse proxy caches using `chef`, and provisioned on an `ec2` node
 
 buttons:
   - glyphicon: link
@@ -27,3 +27,4 @@ buttons:
   - devicon: github
     text: Source Code
     link: https://github.com/shopify/dev
+resume: true

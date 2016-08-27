@@ -18,3 +18,4 @@ buttons:
   - devicon: github
     text: Source Code
     link: https://github.com/kevintpeng/kevintpeng.github.io/tree/master/generate
+resume: true
