@@ -21,7 +21,7 @@ desc: |
 
 buttons:
   - glyphicon: link
-    text: Published Article on Velocity
+    text: Published on Velocity Site
     link: http://velocity.uwaterloo.ca/2014/08/student-experiences-startup-life/
   - devicon: github
     text: Project Source Code

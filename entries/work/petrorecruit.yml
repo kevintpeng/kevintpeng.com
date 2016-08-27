@@ -13,7 +13,7 @@ company: Petro Recruit
 place: Calgary AB / Waterloo ON
 time: August 2015 - Present
 desc: |
-  Our company currently has 5 figure funding, over 3000 job postings and thousands of active users. The platform is powered by robust aggregation system, with integrated machine learning enables our platform to better match candidates with suitable job opportunities.
+  Our company currently has 5 figure funding, over 3000 job postings and thousands of active users. The platform is powered by robust aggregation system, with integrated machine learning to enable our platform to better match candidates with suitable job opportunities.
 
   - Full-stack web development in ruby on rails, designing and building the site
   - architected entire infrastructure system, including an elasticsearch cluster, SQL database, machine learning jobs and scraper jobs

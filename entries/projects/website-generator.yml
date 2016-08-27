@@ -4,7 +4,14 @@ title: Website Generator
 tech:
   - ruby
   - html5
-desc: Used to generate this website! After designing the intended html and css for the web page, repetitive components were modularized, and defined with `YAML` rather than repeating lot's of html. This also let's me use `markdown` format to write notes and blog posts. Generates my Learn Something Everyday notes, using git web hooks.
+  - git
+desc: |
+  - architected a git-based workflow to manage my personal website and notes
+  - git hooks are used to pre-compile static html using ruby
+  - custom designing the html and css for the site, repetitive components were modularized
+  - content is defined using `YAML`, `markdown`, and `erb`
+  - converts files trees of `markdown` files to a website
+
 buttons:
   - text: Learn Something Everyday
     link: http://kpeng.ca/Learn-Something-Everyday/

@@ -12,11 +12,18 @@ company: |
 place: Ottawa, Canada
 time: May 2016 - August 2016
 desc: |
-    - developed Shopify's internal tooling for development environments named `dev`
-    - built a package management system for `dev`, supporting extensions containing custom commands, custom tasks to run for projects, and configurations
+    ### Internal Tooling
+    - built a package management system for internal tool `dev`, supporting extensions containing custom commands, custom tasks to run for projects, and configurations
+    - open sourced `dev` by utilizing my package system to factor out shopify specific code
+
+    ### Developer Infrastructure
     - architected an NGINX reverse proxy that caches dependencies, optimizing `bundle install` times and mitigating the impact of upstream outages
     - deployed the reverse proxy caches using Chef, and provisioned on an EC2 node
+
 buttons:
   - glyphicon: link
-    text: Published Article on Shopify Engineering Blog
+    text: Published on Shopify Engineering Blog
     link: https://engineering.shopify.com/
+  - devicon: github
+    text: Source Code
+    link: https://github.com/shopify/dev
