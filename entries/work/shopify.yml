@@ -14,17 +14,18 @@ time: May 2016 - August 2016
 desc: |
     ### Internal Tooling
     - built a package management system for internal tool `dev` using `ruby` and `bash`, supporting extensions containing custom commands, custom tasks to run for projects, and configurations
-    - open sourced `dev` by utilizing my package system to factor out shopify specific code
+    - prepared `dev` to be open sourced by utilizing my package system to factor out shopify specific code
 
     ### Developer Infrastructure
     - architected an NGINX reverse proxy that caches dependencies, optimizing `bundle install` times and mitigating the impact of upstream outages
     - deployed the reverse proxy caches using `chef`, and provisioned on an `ec2` node
 
-buttons:
-  - glyphicon: link
-    text: Published on Shopify Engineering Blog
-    link: https://engineering.shopify.com/
-  - devicon: github
-    text: Source Code
-    link: https://github.com/shopify/dev
+# buttons:
+#   - glyphicon: link
+#     text: Published on Shopify Engineering Blog
+#     link: https://engineering.shopify.com/
+#   - devicon: github
+#     text: Source Code
+#     link: https://github.com/shopify/dev
+
 resume: true
