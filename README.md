@@ -6,4 +6,6 @@ This integrates dev, a command line tool that I developed at Shopify. To start e
 
 1. Install dev
 2. run `dev up`
-3. Make changes and run `dev build`
+3. Make changes and run `dev setup` to setup git pre-commit hooks 
+
+![./assets/pre-commit.png]
