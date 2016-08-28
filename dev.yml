@@ -6,7 +6,7 @@ up:
   - bundler
 
 commands:
-  build: cat build.sh > .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit && ./.git/hooks/pre-commit
+  build: cat generate/build.sh > .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit && ./.git/hooks/pre-commit
 
 open:
   site: http://kpeng.ca
