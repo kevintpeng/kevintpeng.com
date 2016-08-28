@@ -8,4 +8,4 @@ This integrates dev, a command line tool that I developed at Shopify. To start e
 2. run `dev up`
 3. Make changes and run `dev setup` to setup git pre-commit hooks 
 
-![./assets/pre-commit.png]
+![pre-commit example](./assets/pre-commit.png)
