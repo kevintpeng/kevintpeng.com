@@ -17,6 +17,10 @@ def prepare_entires
   Fancy.puts 'All Entries are rendered.'
 end
 
+def write_resume
+  sections = ['Work Experience', 'Projects', 'Awards']
+end
+
 def write_index_html
   sections = ['Work Experience', 'Projects', 'Awards']
   index = ''
