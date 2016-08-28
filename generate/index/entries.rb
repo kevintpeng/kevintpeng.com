@@ -4,7 +4,7 @@ module Entries
     def generate
       markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, extensions = {})
       entries = {}
-      Dir.glob(File.expand_path('../../../entries/**/*.yml', __FILE__)) do |file|
+      Dir.glob('./entries/**/*.yml') do |file|
         entry_yml = YAML.load_file(file)
         section = entry_yml['section']
         entries[section] ||= []
@@ -35,6 +35,7 @@ module Entries
     #     devicon: ruby (optional/alternative)
     #     text: Published Article on Shopify Engineering Blog
     #     link: https://engineering.shopify.com/
+    # resume: true
 
     def parse_yml(yml, markdown)
       yml['tech'].map! { |t| t.include?('-') ? "devicon devicon-#{t}" : "devicon devicon-#{t}-plain-wordmark" } if yml['tech']
