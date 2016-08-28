@@ -13,8 +13,8 @@ place: Ottawa, Canada
 time: May 2016 - August 2016
 desc: |
     #### Internal Tooling
-    - developed a ruby command-line tool and development environment constructor named `dev`
-    - built a package management system for internal tool `dev`, supporting extensions containing custom commands, custom tasks to run for projects, and configurations
+    - developed `dev`; a command-line tool that constructs your development environments and manages your file system
+    - built a package management system for `dev`, supporting extensions and configurations
     - prepared `dev` to be open sourced by utilizing my package system to factor out shopify specific code
 
     #### Developer Infrastructure
