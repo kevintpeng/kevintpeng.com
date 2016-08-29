@@ -7,8 +7,7 @@ tech:
   - nginx
   - amazonwebservices
 
-company: |
-  <img alt="Shopify" width="170" class="thumbnail-img" src="./assets/Shopify_Logo.png">
+company: Shopify
 place: Ottawa, Canada
 time: May 2016 - August 2016
 desc: |
