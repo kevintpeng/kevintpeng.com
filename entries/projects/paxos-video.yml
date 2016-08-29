@@ -2,7 +2,7 @@ index: 9
 section: Projects
 title: Paxos-Video
 tech:
-  - js
+  - javascript
 desc: |
   - exploration of consensus protocols
   - video synchronization using web RTC and an implemention of the Paxos algorithm
