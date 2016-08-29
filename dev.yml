@@ -9,5 +9,6 @@ commands:
   build: cat generate/build.sh > .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit && ./.git/hooks/pre-commit
 
 open:
+  local: ./index.html
   kpengsite: http://kpeng.ca
   admin: https://analytics.google.com/analytics/web/?authuser=0#realtime/rt-traffic/a82837659w122463402p128135112/
