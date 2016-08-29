@@ -9,7 +9,7 @@ tech:
   - git
 company: PetroPredict @ Velocity Garage
 place: Waterloo ON
-time: June 2014 &ndash; August 2014
+time: Summer 2014
 desc: |
   - created a data processing tool that was used to aggregate and sanitize billions of data entries from csv
   - generated or fit data into Django models automatically
