@@ -5,7 +5,7 @@ tech:
   - ruby
   - html5
 desc: |
-  - general crawling tool that emulates a browser, recursively following links and fetching assets
+  - general crawling tool that emulates a browser, recursively following links using in-order traversal and fetching their assets
   - parses and uses http request headers, and stores cookies for authentication
   - processes and inserts into SQL data stores, or zips locally for offline browsing of web pages
 

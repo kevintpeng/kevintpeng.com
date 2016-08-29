@@ -3,7 +3,7 @@
 \begin{document}
 \namesection{Kevin}{Peng}{
 Software Engineering Student at University of Waterloo\\
-ktpeng@uwaterloo.ca \\
+kevin@kpeng.ca \\
 kpeng.ca \textbullet{}  github.com/kevintpeng  \textbullet{}  linkedin.com/in/kevintpeng\\ 
 }
 
