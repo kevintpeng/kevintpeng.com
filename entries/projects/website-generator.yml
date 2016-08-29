@@ -4,6 +4,8 @@ title: Website Generator
 tech:
   - ruby
   - html5
+  - css
+  - javascript-plain
   - git
 desc: |
   - git hooks are used to pre-compile static html using ruby
