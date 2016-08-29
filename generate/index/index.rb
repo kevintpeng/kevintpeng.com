@@ -23,19 +23,23 @@ end
 
 def write_index_html
   sections = ['Work Experience', 'Projects', 'Awards']
-  index = ''
+  body = ''
   sections.each do |section|
-    index << "<h1>#{section}</h1>\n"
+    body << "<h1>#{section}</h1>\n"
     (@entries[section] || []).reverse_each do |entry|
-      index << "#{entry}\n" if entry
+      body << "#{entry}\n" if entry
     end
   end
+  body
+end
 
-  @body = index
-  index_template = ERB.new(File.read(File.expand_path('../index.html.erb', __FILE__)))
-  index = index_template.result()
+def write_to(file = 'index.html.erb')
+  name = file[/^[\.]*/]
+  @body = body
+  template = ERB.new(File.read(File.expand_path("../#{file}", __FILE__)))
+  result = template.result()
   # indents and cleans html output
-  index = HtmlBeautifier.beautify(index)
-  Fancy.puts 'Index Successfully Generated.'
-  File.open("index.html", 'w') { |f| f.write(index)}
+  result = HtmlBeautifier.beautify(result)
+  Fancy.puts "#{name} successfully generated."
+  File.open("#{name}.html", 'w') { |f| f.write(result)}
 end
