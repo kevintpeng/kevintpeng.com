@@ -13,6 +13,18 @@ require 'fancy'
 @footer = ERB.new(File.read(File.expand_path('../general/footer.html.erb', __FILE__))).result()
 @head = File.read(File.expand_path('../general/head.html', __FILE__))
 
-
-prepare_entires
-write_index_html
+begin
+  prepare_entires
+  prepare_index
+  write_index_html
+  write_resume
+rescue Exception => e
+  case e
+  when nil         # normal, non-error termination
+  when Interrupt   # ctrl-c
+    Fancy.error "Interrupt. Changes not committed."
+  else
+    Fancy.error "Error Ocurred. Changes not committed."
+  end
+  raise e
+end

@@ -21,7 +21,7 @@ def write_resume
   sections = ['Work Experience', 'Projects', 'Awards']
 end
 
-def write_index_html
+def prepare_index
   sections = ['Work Experience', 'Projects', 'Awards']
   body = ''
   sections.each do |section|
@@ -30,12 +30,11 @@ def write_index_html
       body << "#{entry}\n" if entry
     end
   end
-  body
+  @body = body
 end
 
-def write_to(file = 'index.html.erb')
-  name = file[/^[\.]*/]
-  @body = body
+def write_index_html(file = "index.html.erb")
+  name = file[/^[^\.]*/]
   template = ERB.new(File.read(File.expand_path("../#{file}", __FILE__)))
   result = template.result()
   # indents and cleans html output
