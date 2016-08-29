@@ -28,6 +28,9 @@ h1{
 h2{
   font-weight: 300;
 }
+h3{
+  margin-top: 0px;
+}
 a{
 	color: #f4eef7;
 	outline: 0;
