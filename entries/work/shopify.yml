@@ -6,6 +6,7 @@ tech:
   - go-plain
   - nginx
   - amazonwebservices
+  - apple
 
 company: Shopify
 place: Ottawa, Canada
