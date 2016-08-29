@@ -1,0 +1,13 @@
+index: 9
+section: Projects
+title: Paxos-Video
+tech:
+  - js
+desc: |
+  - exploration of consensus protocols
+  - video synchronization using web RTC and an implemention of the Paxos algorithm
+buttons:
+  - devicon: github
+    text: Source Code
+    link: https://github.com/kevintpeng/paxos-video
+resume: true
