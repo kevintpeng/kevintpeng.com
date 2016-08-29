@@ -247,6 +247,8 @@ div .container-body h4{
 }
 i.devicon{
   color: #9b59b6;
+  font-size: 48;
+  margin-bottom: 0px;
 }
 h2.entry{
   float: left;
