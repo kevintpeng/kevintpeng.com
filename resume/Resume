@@ -1,0 +1,48 @@
+Kevin Peng
+2A Software Engineering Student at University of Waterloo
+kevin@kpeng.ca · kpeng.ca · github.com/kevintpeng
+Developer, entrepreneur & learner; excited to tackle interesting problems and learn something new.
+
+PROFESSIONAL EXPERIENCE
+SHOPIFY PRODUCTION ENGINEERING INTERN
+Ottawa ON | Summer 2016
+• InternalTooling: developed a ruby and bash command-line tool that constructs development environments and manages file systems; the project was titled dev
+• architected a package management system, to support extensions and configurations for dev
+• prepared dev to be open sourced by utilizing the package system to factor out Shopify specifics
+• DeveloperInfrastructure: built an NGINX reverse proxy that caches dependencies,which optimizes bundle install to be 7% faster and mitigates the impact of upstream outages
+• deployed on EC2,using Chef
+
+FOUNDER AND FULL STACK WEB DEVELOPER AT PETRO RECRUIT
+Calgary AB / Waterloo ON | Summer 2015-Present
+• built Ruby on Rails application (petrorecruit.ca), for aggregating & classifying job postings
+• created automated scrapers and performed network analysis with Wireshark and TCP/IP
+• architected system infrastructure, including Elasticsearch, SQL database & backgroundjobs 
+• implemented a naïve bayesian classifier to categorize job postings
+• raised$40,000+ in funding; aggregated3000+ job postings; registered 2000+ users
+
+DATA ENGINEERING INTERN AT WATERLOO VELOCITY GARAGE
+Waterloo ON | Summer 2014
+• created a data processing tool used to aggregate and sanitize millions of data entries from csv 
+• automated Django model generation based on incoming data
+• wrote a parser in python that processes data for graphing and visualization using D3.js
+• published article on velocity blog,(follow redirect:kpeng.ca/velocity)
+
+SELECTED PROJECTS
+All project source code available on GitHub (@kevintpeng)
+• Web Crawler & Scraper: Ruby tool,recursively searches web pages,extracts data with regex
+• Paxos Video: Javascript app aimed to achieve multi-client video synchronization using webRTC and an implementation of Paxos algorithm; for exploration of consensus protocols
+• SiteBuilder: uses githooks to pre-compile static html from content defined using YAML, markdown, and embedded ruby. Converts files trees of markdown files to a website
+• Rubik’s CubeSolver:Java app,solves in 98 quarter turns on average
+• Learn Something Everyday:Daily notes on topics of interest to expand breadth of knowledge
+
+SELECTED DISTINCTIONS
+• Canada-wide Science Fair Silver Medalist and Best in Category of Information 
+• 3x Gold Medalist at theWaterloo Science and Engineering Fair
+• Eastern Canada Student Energy Conference Innovation Award
+• Recipient of Community Volunteer Scholarship
+• Recipient of Waterloo President’s Scholarship (+95% High School Admissions Average) 
+• Winner of Waterloo Region Robotics Engineering Competition
+
+RELEVANT SKILLS
+• Languages: Ruby, C, C++, Java, Python, Go, Javascript, Bash, HTML, CSS
+• Technology: Unix, Git, NGINX, Chef, SQL, Ruby on Rails, Mocha, AWS, Wireshark
