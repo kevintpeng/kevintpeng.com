@@ -2,12 +2,12 @@ index: 3
 section: Work Experience
 title: Software Engineering Intern
 tech:
+  - python-plain
   - ruby
   - rails
-  - javascript
-  - emberjs
-  - spark
-  - scikit-learn
+  - javascript-plain
+  - postgresql
+  - redis
 company:  Apple
 place: Cupertino California, USA
 time: Winter 2017
