@@ -1,0 +1,27 @@
+index: 3
+section: Work Experience
+title: Software Engineering Intern
+tech:
+  - ruby
+  - rails
+  - javascript
+  - emberjs
+  - spark
+  - scikit-learn
+company:  Apple
+place: Cupertino California, USA
+time: Winter 2017
+desc: |
+  - Proposed and implemented a data entry process in overseas factories, for data acquisition targeting the remaining 25% of product reliability data; built with Ember.js and Ruby on Rails
+  - Prototyped 50% faster data processing ETL architecture with Spark and evaluated costs
+  - Developed a machine learning classifier to adjust reliability specs from product returns
+  - Took initiative to reach out and collaborate with teams across Apple for mentorship
+# buttons:
+#   - glyphicon: link
+#     text: Published on Shopify Engineering Blog
+#     link: https://engineering.shopify.com/
+#   - devicon: github
+#     text: Source Code
+#     link: https://github.com/shopify/dev
+
+resume: true

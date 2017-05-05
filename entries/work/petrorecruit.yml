@@ -13,11 +13,11 @@ company: Petro Recruit
 place: Calgary AB / Waterloo ON
 time: Summer 2015 - Present
 desc: |
-  Our company currently has 5 figure funding, over 3000 job postings and thousands of active users. The platform is powered by robust aggregation system, with integrated machine learning to enable our platform to better match candidates with suitable job opportunities.
-
-  - Full-stack web development with ruby on rails
+  - Built Ruby on Rails app (petrorecruit.ca) for aggregating & classifying job postings
+  - Created a scraping system to generate a corpus of postings, in Ruby
+  - Implemented a naïve bayesian classifier to categorize scraped job postings
+  - Raised $40,000+ in funding and published 3,000+ postings
   - architected entire infrastructure system, including an elasticsearch cluster, SQL database, machine learning jobs and scraper jobs
-  - implemented a naïve bayesian classifier to match job postings into categories
 
 buttons:
   - glyphicon: link
