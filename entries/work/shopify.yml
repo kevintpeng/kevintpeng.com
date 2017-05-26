@@ -12,10 +12,9 @@ company: Shopify
 place: Ottawa, Canada
 time: Summer 2016
 desc: |
-  - Internal Tooling: contributed to a command-line tool used by all developers to construct development environments with a unified workflow, built with Ruby & Bash
-  - Architected a package management system, to support extensions for the tool
-  - Developer Infrastructure: built a reverse proxy in NGINX to cache dependencies
-  - Optimized deploy and install time to be 7% faster while mitigating upstream outages
+  - Proposed and developed a reverse proxy in NGINX and Chef to cache dependencies which allowed 40% faster download and mitigating upstream outages
+  - Architected a package management system to modularize functionality for Shopify’s developer automation tool, built using Ruby and Bash
+
 # buttons:
 #   - glyphicon: link
 #     text: Published on Shopify Engineering Blog

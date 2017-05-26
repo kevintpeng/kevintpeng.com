@@ -12,10 +12,9 @@ company:  Apple
 place: Cupertino California, USA
 time: Winter 2017
 desc: |
-  - Proposed and implemented a data entry process in overseas factories, for data acquisition targeting the remaining 25% of product reliability data; built with Ember.js and Ruby on Rails
-  - Prototyped 50% faster data processing ETL architecture with Spark and evaluated costs
-  - Developed a machine learning classifier to adjust reliability specs from product returns
-  - Took initiative to reach out and collaborate with teams across Apple for mentorship
+  - Architected an online data entry system for use in overseas factories which enabled a 33% increase in automatic data processing with an estimated $200,000/year in savings
+  - Prototyped a new ETL pipeline with 50% faster data processing and evaluated its costs, saving $50,000+ from the project’s infrastructure expenses
+  - Designed a machine learning classifier (SVM) to adjust reliability specs based on product returns
 # buttons:
 #   - glyphicon: link
 #     text: Published on Shopify Engineering Blog

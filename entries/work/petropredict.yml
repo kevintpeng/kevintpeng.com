@@ -11,9 +11,8 @@ company: PetroPredict @ Velocity Garage
 place: Waterloo ON
 time: Summer 2014
 desc: |
-  - created a data processing tool that was used to aggregate and sanitize millions of data entries from csv
-  - generated or fit data into Django models automatically
-  - wrote a python parser for json data that extracted and processed data for graphing and visualization using D3.js
+  - Created a data processing tool using Python to aggregate and sanitize millions of data rows
+  - Built dashboard graphs and visuals in D3.js to plot processed data
 
   <p><a href="http://velocity.uwaterloo.ca/2014/08/student-experiences-startup-life/">
     <img class="thumbnail-img" src="http://velocity.uwaterloo.ca/wp-content/uploads/2014/08/PetroPredict-966x598.jpg">
