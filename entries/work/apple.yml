@@ -9,7 +9,7 @@ tech:
   - postgresql
   - redis
 company:  Apple
-place: Cupertino California, USA
+place: Cupertino, CA
 time: Winter 2017
 desc: |
   - Architected an online data entry system for use in overseas factories which enabled a 33% increase in automatic data processing with an estimated $200,000/year in savings

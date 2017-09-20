@@ -1,6 +1,6 @@
 index: 1
 section: Work Experience
-title: FOUNDER, LEAD DEVELOPER
+title: Co-founder
 tech:
   - ruby
   - rails
@@ -11,7 +11,7 @@ tech:
   - html5
 company: Petro Recruit
 place: Calgary AB / Waterloo ON
-time: Summer 2015 - Present
+time: Summer 2015 - Summer 2016
 desc: |
   - Led a small team of developers to build a web app for scraping and classifying job postings
   - Implemented a naïve bayesian classifier to automatically categorize scraped jobs
