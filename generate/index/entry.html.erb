@@ -1,6 +1,6 @@
 <hr>
 <div class="floating-banner floating-banner-inner">
-  <h2 class="entry"><%= @entry['title']%></h2>
+  <h2 class="entry"><%= @entry['company'] || @entry['title']%></h2>
   <h2 class="devicons">
     <% (@entry['tech'] || []).each do |tech|  %>
       <%= "<i class=\"#{tech}\"></i>" %>
@@ -9,7 +9,7 @@
   </h2>
 </div>
 <% if @entry['company']%>
-<h3><%= @entry['company']%></h3>
+<h3><%= @entry['title']%></h3>
 <%end%>
 <h4>
   <% subheader = "<i>" %>
