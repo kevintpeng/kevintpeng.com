@@ -1,0 +1,20 @@
+index: 4
+section: Work Experience
+title: Software Engineering Intern
+tech:
+  - ansible
+  - kubernetes
+company: Bloomberg
+place: Manhattan, NY
+time: Fall 2017
+desc: |
+  - Building software infrastructure for the Financial Analytics & Verticals team
+# buttons:
+#   - glyphicon: link
+#     text: Published on Shopify Engineering Blog
+#     link: https://engineering.shopify.com/
+#   - devicon: github
+#     text: Source Code
+#     link: https://github.com/shopify/dev
+
+resume: true
