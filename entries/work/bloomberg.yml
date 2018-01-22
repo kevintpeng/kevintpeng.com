@@ -9,6 +9,9 @@ place: Manhattan, NY
 time: Fall 2017
 desc: |
   - Building software infrastructure for the Financial Analytics & Verticals team
+  - Deployed Cassandra and Spark on Kubernetes enabling several teams to more easily scale database clusters as a part of the internal database-as-a-service system 
+  - Reduced up to 55% of CPU and RAM requirements without performance loss by leveraging Kubernetes to share idle resources and by co-locating processes to reduce network latency
+  - Automated deployment of Kubernetes clusters integrated into the Bloomberg ecosystem
 # buttons:
 #   - glyphicon: link
 #     text: Published on Shopify Engineering Blog

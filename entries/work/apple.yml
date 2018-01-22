@@ -12,8 +12,8 @@ company:  Apple
 place: Cupertino, CA
 time: Winter 2017
 desc: |
-  - Architected an online data entry system for use in overseas factories which enabled a 33% increase in automatic data processing with an estimated $200,000/year in savings
-  - Prototyped a new ETL pipeline with 50% faster data processing and evaluated its costs, saving $50,000+ from the project’s infrastructure expenses
+  - Enabled a 30% increase in automatic data processing, which resulted in $200,000/year in savings, by a building data entry interface for product reliability testing in overseas factories
+  - Improved data processing speed by 50% by rearchitecting the ETL pipeline to use Spark
   - Designed a machine learning classifier (SVM) to adjust reliability specs based on product returns
 # buttons:
 #   - glyphicon: link

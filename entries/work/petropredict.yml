@@ -11,7 +11,7 @@ company: PetroPredict @ Velocity Garage
 place: Waterloo ON
 time: Summer 2014
 desc: |
-  - Created a data processing tool using Python to aggregate and sanitize millions of data rows
+  - Created a data processing tool using Python to sanitize millions of rows of oil pipeline data
   - Built dashboard graphs and visuals in D3.js to plot processed data
 
   <p><a href="http://velocity.uwaterloo.ca/2014/08/student-experiences-startup-life/">

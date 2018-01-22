@@ -12,7 +12,8 @@ company: Shopify
 place: Ottawa, Canada
 time: Summer 2016
 desc: |
-  - Proposed and developed a reverse proxy in NGINX and Chef to cache dependencies which allowed 40% faster download and mitigating upstream outages
+  - Mitigated the impact of upstream dependency outages by proposing and developing a reverse proxy using NGINX and Chef to cache dependencies
+  - Built several features for the developer automation tool to improve development workflow
   - Architected a package management system to modularize functionality for Shopify’s developer automation tool, built using Ruby and Bash
 
 # buttons:
