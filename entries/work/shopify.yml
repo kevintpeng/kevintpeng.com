@@ -16,6 +16,11 @@ desc: |
   - Built several features for the developer automation tool to improve development workflow
   - Architected a package management system to modularize functionality for Shopify’s developer automation tool, built using Ruby and Bash
 
+buttons:
+  - glyphicon: link
+    text: Blog Post
+    link: https://devproductivity.io/dev-shopifys-all-purpose-development-tool/
+
 # buttons:
 #   - glyphicon: link
 #     text: Published on Shopify Engineering Blog
