@@ -14,8 +14,6 @@ desc: |
   - converts files trees of `markdown` files to a website
 
 buttons:
-  - text: Learn Something Everyday
-    link: http://kpeng.ca/Learn-Something-Everyday/
   - devicon: github
     text: Source Code
     link: https://github.com/kevintpeng/kevintpeng.github.io/tree/master/generate
